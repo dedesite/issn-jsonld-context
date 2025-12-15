@@ -137,19 +137,19 @@
       "@type" : "@id"
     },
     "M3620_a" : {
-      "@id" : "m213xx:M3620_a",
+      "@id" : "m213XX:M3620_a",
       "@type" : "xsd:string"
     },
     "M3620_z" : {
-      "@id" : "m213xx:M3620_z",
+      "@id" : "m213XX:M3620_z",
       "@type" : "xsd:string"
     },
     "M3621_a" : {
-      "@id" : "m213xx:M3621_a",
+      "@id" : "m213XX:M3621_a",
       "@type" : "xsd:string"
     },
     "M3621_z" : {
-      "@id" : "m213xx:M3621_z",
+      "@id" : "m213XX:M3621_z",
       "@type" : "xsd:string"
     },
     "about" : {
