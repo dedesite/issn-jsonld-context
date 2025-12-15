@@ -88,7 +88,7 @@
       "@id" : "bfrel:isb",
       "@type" : "@id"
     },
-    "issn_bibo" : {
+    "issnBibo" : {
       "@id" : "bibo:issn",
       "@type" : "xsd:string"
     },
@@ -108,7 +108,7 @@
       "@id" : "dct:spatial",
       "@type" : "@id"
     },
-    "type_dct" : {
+    "typeDct" : {
       "@id" : "dct:type",
       "@type" : "@id"
     },
@@ -176,7 +176,7 @@
       "@id" : "schema:isPartOf",
       "@type" : "@id"
     },
-    "issn_schema" : {
+    "issnSchema" : {
       "@id" : "schema:issn",
       "@type" : "xsd:string"
     },
@@ -330,7 +330,7 @@
       "@id" : "schema:citation",
       "@type" : "@id"
     },
-    "citation_text" : {
+    "citationText" : {
       "@id" : "schema:citation",
       "@type" : "@id"
     },
