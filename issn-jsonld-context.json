@@ -432,11 +432,11 @@
     },
     "hasCancelledISSN" : {
       "@id" : "issnprop:hasCancelledISSN",
-      "@type" : "xsd:string"
+      "@type" : "@id"
     },
     "cancelledInFavorOf" : {
       "@id" : "issnprop:cancelledInFavorOf",
-      "@type" : "xsd:string"
+      "@type" : "@id"
     },
 
 
