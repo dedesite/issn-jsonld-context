@@ -4,6 +4,7 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix dcam: <http://purl.org/dc/dcam/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix recordStatusIssnH: <http://issn.org/vocabularies/RecordStatusIssnH#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -36,11 +37,47 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 
-<http://issn.org/vocabularies/shapes> a owl:Ontology;
+<http://issn.org/vocabularies/shapes> a owl:Ontology, skos:ConceptScheme;
   rdfs:label "ISSN linked data application profile SHACL encoding"@en;
   rdfs:comment "The encoding of the [ISSN Application Profile](https://www.issn.org/understanding-the-issn/assignment-rules/issn-linked-data-application-profile/) in SHACL"@en;
   owl:versionInfo "2.0";
-  dct:modified "2024-09-01T00:00:00.000Z"^^xsd:dateTime .
+  dct:modified "2024-09-01T00:00:00.000Z"^^xsd:dateTime;
+  skos:hasTopConcept issnshapes:P9, issnshapes:P10, issnshapes:P11, issnshapes:P12,
+    issnshapes:P13, issnshapes:P14, issnshapes:P15, issnshapes:P16, issnshapes:P17, issnshapes:P18,
+    issnshapes:P19, issnshapes:P20, issnshapes:P21, issnshapes:P22, issnshapes:P23, issnshapes:P24,
+    issnshapes:P25, issnshapes:P26, issnshapes:P27, issnshapes:P28, issnshapes:P29, issnshapes:P30,
+    issnshapes:P31, issnshapes:P32, issnshapes:P33, issnshapes:P34, issnshapes:P35, issnshapes:P36,
+    issnshapes:P37, issnshapes:P38, issnshapes:P39, issnshapes:P40, issnshapes:P41, issnshapes:P42,
+    issnshapes:P43, issnshapes:P44, issnshapes:P45, issnshapes:P46, issnshapes:P47, issnshapes:P48,
+    issnshapes:P49, issnshapes:P50, issnshapes:P51, issnshapes:P52, issnshapes:P53, issnshapes:P54,
+    issnshapes:P55, issnshapes:P57, issnshapes:P58, issnshapes:P59, issnshapes:P60, issnshapes:P61,
+    issnshapes:P62, issnshapes:P63, issnshapes:P64, issnshapes:P65, issnshapes:P66, issnshapes:P67,
+    issnshapes:P68, issnshapes:P69, issnshapes:P70, issnshapes:P71, issnshapes:P72, issnshapes:P73,
+    issnshapes:P74, issnshapes:P75, issnshapes:P76, issnshapes:P77, issnshapes:P78, issnshapes:P79,
+    issnshapes:P80, issnshapes:P81, issnshapes:P82, issnshapes:P83, issnshapes:P84, issnshapes:P85,
+    issnshapes:P86, issnshapes:P88, issnshapes:P89, issnshapes:P90, issnshapes:P91, issnshapes:P93,
+    issnshapes:P94, issnshapes:P95, issnshapes:P97, issnshapes:P98, issnshapes:P99, issnshapes:P100,
+    issnshapes:P101, issnshapes:P102, issnshapes:P104, issnshapes:P105, issnshapes:P106,
+    issnshapes:P107, issnshapes:P109, issnshapes:P110, issnshapes:P111, issnshapes:P112,
+    issnshapes:P114, issnshapes:P115, issnshapes:P116, issnshapes:P117, issnshapes:P119,
+    issnshapes:P120, issnshapes:P121, issnshapes:P122, issnshapes:P124, issnshapes:P125,
+    issnshapes:P126, issnshapes:P127, issnshapes:P128, issnshapes:P130, issnshapes:P131,
+    issnshapes:P132, issnshapes:P133, issnshapes:P135, issnshapes:P136, issnshapes:P137,
+    issnshapes:P138, issnshapes:P139, issnshapes:P140, issnshapes:P141, issnshapes:P142,
+    issnshapes:P143, issnshapes:P144, issnshapes:P145, issnshapes:P146, issnshapes:P147,
+    issnshapes:P148, issnshapes:P150, issnshapes:P151, issnshapes:P152, issnshapes:P153,
+    issnshapes:P154, issnshapes:P155, issnshapes:P157, issnshapes:P158, issnshapes:P159,
+    issnshapes:P160, issnshapes:P162, issnshapes:P163, issnshapes:P165, issnshapes:P166,
+    issnshapes:P167, issnshapes:P169, issnshapes:P170, issnshapes:P171, issnshapes:P172,
+    issnshapes:P173, issnshapes:P174, issnshapes:P175, issnshapes:P176, issnshapes:P177,
+    issnshapes:P178, issnshapes:P180, issnshapes:P181, issnshapes:P182, issnshapes:P183,
+    issnshapes:P185, issnshapes:P186, issnshapes:P191, issnshapes:P192, issnshapes:P193,
+    issnshapes:P195, issnshapes:P196, issnshapes:P197, issnshapes:P201, issnshapes:P202,
+    issnshapes:P203, issnshapes:P207, issnshapes:P208, issnshapes:P212, issnshapes:P213,
+    issnshapes:P217, issnshapes:P218, issnshapes:P219, issnshapes:P220, issnshapes:P221,
+    issnshapes:P222, issnshapes:P223, issnshapes:P224, issnshapes:P225, issnshapes:P226,
+    issnshapes:P227, issnshapes:P228, issnshapes:P229, issnshapes:P230, issnshapes:P231,
+    issnshapes:P233, issnshapes:P234, issnshapes:P235 .
 
 issnshapes:ISSNResource a sh:NodeShape;
   rdfs:label "ISSN resource"@en;
@@ -56,12 +93,12 @@ issnshapes:ISSNResource a sh:NodeShape;
     issnshapes:P32, issnshapes:P33, issnshapes:P34, issnshapes:P35, issnshapes:P36, issnshapes:P37,
     issnshapes:P38, issnshapes:P39, issnshapes:P40, issnshapes:P41, issnshapes:P42, issnshapes:P43,
     issnshapes:P44, issnshapes:P45, issnshapes:P46, issnshapes:P47, issnshapes:P48, issnshapes:P49,
-    issnshapes:P50, issnshapes:P51, issnshapes:P52, issnshapes:P53, issnshapes:P54, issnshapes:P56,
+    issnshapes:P50, issnshapes:P51, issnshapes:P52, issnshapes:P53, issnshapes:P54, issnshapes:P55,
     issnshapes:P57, issnshapes:P58, issnshapes:P59, issnshapes:P60, issnshapes:P61, issnshapes:P62,
     issnshapes:P63, issnshapes:P64, issnshapes:P65, issnshapes:P66, issnshapes:P67, issnshapes:P68,
     issnshapes:P69, issnshapes:P70, issnshapes:P71, issnshapes:P72, issnshapes:P73, issnshapes:P74,
     issnshapes:P75, issnshapes:P76, issnshapes:P77, issnshapes:P78, issnshapes:P79, issnshapes:P80,
-    issnshapes:P81, issnshapes:P82, issnshapes:P83, issnshapes:P84, issnshapes:P85 .
+    issnshapes:P81, issnshapes:P82, issnshapes:P83, issnshapes:P84, issnshapes:P85, issnshapes:P86 .
 
 issnshapes:ISSNResource-target sh:select """# An ISSN is defined as a resource identified by an
 # identifier of type bf:Issn
@@ -78,7 +115,7 @@ issnshapes:ISSN-L a sh:NodeShape;
   sh:nodeKind sh:IRI;
   sh:order "15"^^xsd:integer;
   sh:pattern "^http://issn.org/resource/ISSN-L/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9]$";
-  sh:property issnshapes:P92, issnshapes:P93, issnshapes:P94 .
+  sh:property issnshapes:P93, issnshapes:P94, issnshapes:P95 .
 
 issnshapes:ISSN-L-target sh:select """# an ISSN-L is defined as any resource with a URI starting with \".../ISSN-L\"
 SELECT ?this
@@ -89,463 +126,576 @@ WHERE {
 
 issnshapes:ISSNRecordCreation a sh:NodeShape;
   rdfs:label "Record Creation Activity"@en;
+  sh:targetClass prov:Activity;
   sh:nodeKind sh:IRI;
   sh:order "16"^^xsd:integer;
   sh:pattern "^http://issn.org/resource/ISSN/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9]#RecordCreation$";
-  sh:property issnshapes:P87, issnshapes:P88, issnshapes:P89, issnshapes:P90 .
+  sh:property issnshapes:P88, issnshapes:P89, issnshapes:P90, issnshapes:P91 .
 
 issnshapes:ISSNRecord a sh:NodeShape;
   rdfs:label "ISSN Record"@en;
   sh:nodeKind sh:IRI;
   sh:order "17"^^xsd:integer;
   sh:pattern "^http://issn.org/resource/ISSN/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9]#Record";
-  sh:property issnshapes:P96, issnshapes:P97, issnshapes:P98, issnshapes:P99, issnshapes:P100,
-    issnshapes:P101 .
+  sh:property issnshapes:P97, issnshapes:P98, issnshapes:P99, issnshapes:P100, issnshapes:P101,
+    issnshapes:P102 .
 
 issnshapes:ISSNPublicationEvent a sh:NodeShape;
   rdfs:label "ISSN Publication Event"@en;
   sh:nodeKind sh:IRI;
   sh:order "18"^^xsd:integer;
   sh:pattern "^http://issn.org/resource/ISSN/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9](#ReferencePublicationEvent|#EarliestPublicationEvent|#InterveningPublicationEvent\\[[0-9]\\]+|#LatestPublicationEvent)$";
-  sh:property issnshapes:P103, issnshapes:P104, issnshapes:P105, issnshapes:P106 .
+  sh:property issnshapes:P104, issnshapes:P105, issnshapes:P106, issnshapes:P107 .
 
 issnshapes:ISSNPlaces a sh:NodeShape;
   rdfs:label "Places"@en;
   sh:nodeKind sh:IRI;
   sh:order "19"^^xsd:integer;
   sh:pattern "^http://issn.org/resource/ISSN/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9](#PublicationPlace-.*|#ReproductionPlace-.*)$";
-  sh:property issnshapes:P108, issnshapes:P109, issnshapes:P110, issnshapes:P111 .
+  sh:property issnshapes:P109, issnshapes:P110, issnshapes:P111, issnshapes:P112 .
 
 issnshapes:ISSNGeocoordinates a sh:NodeShape;
   rdfs:label "Geocordinates"@en;
   sh:nodeKind sh:IRI;
   sh:order "20"^^xsd:integer;
   sh:pattern "^http://issn.org/resource/ISSN/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9](#PublicationPlace-.*-GeoCoordinates|#ReproductionPlace-.*-Geocoordinates$";
-  sh:property issnshapes:P113, issnshapes:P114, issnshapes:P115, issnshapes:P116 .
+  sh:property issnshapes:P114, issnshapes:P115, issnshapes:P116, issnshapes:P117 .
 
 issnshapes:ISSNReproductions a sh:NodeShape;
   rdfs:label "Reproductions"@en;
   sh:nodeKind sh:BlankNode;
   sh:order "21"^^xsd:integer;
-  sh:property issnshapes:P118, issnshapes:P119, issnshapes:P120, issnshapes:P121 .
+  sh:property issnshapes:P119, issnshapes:P120, issnshapes:P121, issnshapes:P122 .
 
 issnshapes:ISSNID a sh:NodeShape;
   rdfs:label "Identifiers"@en;
   sh:nodeKind sh:IRI;
   sh:order "22"^^xsd:integer;
   sh:pattern "^http://issn.org/resource/ISSN/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9](#ISSN|#ISSN-L|#CODEN|#KeyTitle|#AbbreviatedKeyTitle)$";
-  sh:property issnshapes:P123, issnshapes:P124, issnshapes:P125, issnshapes:P126, issnshapes:P127 .
+  sh:property issnshapes:P124, issnshapes:P125, issnshapes:P126, issnshapes:P127, issnshapes:P128 .
 
 issnshapes:ISSNOriginalTitle a sh:NodeShape;
   rdfs:label "Original Title"@en;
   sh:nodeKind sh:BlankNode;
   sh:order "23"^^xsd:integer;
-  sh:property issnshapes:P184, issnshapes:P185 .
+  sh:property issnshapes:P185, issnshapes:P186 .
 
 issnshapes:ISSNTitle a sh:NodeShape;
   rdfs:label "Titles"@en;
   sh:nodeKind sh:BlankNodeOrIRI;
   sh:order "24"^^xsd:integer;
-  sh:or _:73b5c5b2b41e44ccb84226da5ecac5c72;
-  sh:property issnshapes:P129, issnshapes:P130, issnshapes:P131, issnshapes:P132 .
+  sh:or _:ae587f1f220542eb847087bc3e2b86372;
+  sh:property issnshapes:P130, issnshapes:P131, issnshapes:P132, issnshapes:P133 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c72 rdf:first _:73b5c5b2b41e44ccb84226da5ecac5c73;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c74 .
+_:ae587f1f220542eb847087bc3e2b86372 rdf:first _:ae587f1f220542eb847087bc3e2b86373;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b86374 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c73 sh:nodeKind sh:IRI;
+_:ae587f1f220542eb847087bc3e2b86373 sh:nodeKind sh:IRI;
   sh:pattern "^http://issn.org/resource/ISSN/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9](#KeyTitle|#AbbreviatedKeyTitle)$" .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c74 rdf:first _:73b5c5b2b41e44ccb84226da5ecac5c75;
+_:ae587f1f220542eb847087bc3e2b86374 rdf:first _:ae587f1f220542eb847087bc3e2b86375;
   rdf:rest rdf:nil .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c75 sh:nodeKind sh:BlankNode .
+_:ae587f1f220542eb847087bc3e2b86375 sh:nodeKind sh:BlankNode .
 
 issnshapes:ISSNOrganization a sh:NodeShape;
   rdfs:label "Organizations"@en;
   sh:nodeKind sh:IRI;
   sh:order "25"^^xsd:integer;
   sh:pattern "^http://issn.org/organization/ISSNCenter#.*|http://issn.org/resource/ISSN/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9](#Publisher-.*|#IssuingBody-.*|#ReproductionAgency-.*)$";
-  sh:property issnshapes:P134, issnshapes:P135, issnshapes:P136, issnshapes:P137, issnshapes:P138,
-    issnshapes:P139, issnshapes:P140, issnshapes:P141, issnshapes:P142, issnshapes:P143,
-    issnshapes:P144, issnshapes:P145, issnshapes:P146, issnshapes:P147 .
+  sh:property issnshapes:P135, issnshapes:P136, issnshapes:P137, issnshapes:P138, issnshapes:P139,
+    issnshapes:P140, issnshapes:P141, issnshapes:P142, issnshapes:P143, issnshapes:P144,
+    issnshapes:P145, issnshapes:P146, issnshapes:P147, issnshapes:P148 .
 
 issnshapes:ISSNContactPoint a sh:NodeShape;
   rdfs:label "Contact points"@en;
   sh:nodeKind sh:BlankNode;
   sh:order "26"^^xsd:integer;
-  sh:property issnshapes:P149, issnshapes:P150, issnshapes:P151, issnshapes:P152, issnshapes:P153,
-    issnshapes:P154 .
+  sh:property issnshapes:P150, issnshapes:P151, issnshapes:P152, issnshapes:P153, issnshapes:P154,
+    issnshapes:P155 .
 
 issnshapes:ISSNPostalAddress a sh:NodeShape;
   rdfs:label "Adresses"@en;
   sh:nodeKind sh:BlankNode;
   sh:order "27"^^xsd:integer;
-  sh:property issnshapes:P156, issnshapes:P157, issnshapes:P158, issnshapes:P159 .
+  sh:property issnshapes:P157, issnshapes:P158, issnshapes:P159, issnshapes:P160 .
 
 issnshapes:ISSNClassification a sh:NodeShape;
   rdfs:label "Classifications"@en;
   sh:nodeKind sh:BlankNode;
   sh:order "28"^^xsd:integer;
-  sh:property issnshapes:P161, issnshapes:P162 .
+  sh:property issnshapes:P162, issnshapes:P163 .
 
 issnshapes:ISSNNote a sh:NodeShape;
   rdfs:label "Notes"@en;
   sh:nodeKind sh:BlankNode;
   sh:order "29"^^xsd:integer;
-  sh:property issnshapes:P164, issnshapes:P165, issnshapes:P166 .
+  sh:property issnshapes:P165, issnshapes:P166, issnshapes:P167 .
 
 issnshapes:ISSNKeepersArchive a sh:NodeShape;
   rdfs:label "Keepers Archive"@en;
   sh:nodeKind sh:BlankNode;
   sh:order "30"^^xsd:integer;
-  sh:property issnshapes:P168, issnshapes:P169, issnshapes:P170, issnshapes:P171, issnshapes:P172,
-    issnshapes:P173, issnshapes:P174, issnshapes:P175, issnshapes:P176, issnshapes:P177 .
+  sh:property issnshapes:P169, issnshapes:P170, issnshapes:P171, issnshapes:P172, issnshapes:P173,
+    issnshapes:P174, issnshapes:P175, issnshapes:P176, issnshapes:P177, issnshapes:P178 .
 
 issnshapes:ISSNProvidedResourceDescription a sh:NodeShape;
   rdfs:label "Provided resource description"@en;
   sh:nodeKind sh:BlankNode;
   sh:order "31"^^xsd:integer;
-  sh:property issnshapes:P179, issnshapes:P180, issnshapes:P181, issnshapes:P182 .
+  sh:property issnshapes:P180, issnshapes:P181, issnshapes:P182, issnshapes:P183 .
 
 issnshapes:ISSNArchiveOrganization a sh:NodeShape;
   rdfs:label "Archival organization"@en;
   sh:nodeKind sh:IRI;
   sh:order "32"^^xsd:integer;
   sh:pattern "^http://issn.org/organization/keepers#.*$";
-  sh:property issnshapes:P190, issnshapes:P191, issnshapes:P192 .
+  sh:property issnshapes:P191, issnshapes:P192, issnshapes:P193 .
 
 issnshapes:ISSNCompleteArchive a sh:NodeShape;
   rdfs:label "Complete archive"@en;
   sh:nodeKind sh:IRI;
   sh:order "33"^^xsd:integer;
   sh:pattern "^http://issn.org/resource/ISSN/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9]#WebArchive-.*$";
-  sh:property issnshapes:P194, issnshapes:P195, issnshapes:P196 .
+  sh:property issnshapes:P195, issnshapes:P196, issnshapes:P197 .
+
+issnshapes:ISSN-H a sh:NodeShape;
+  rdfs:label "ISSN-H"@en;
+  sh:target issnshapes:ISSN-H-target;
+  sh:nodeKind sh:IRI;
+  sh:order "36"^^xsd:integer;
+  sh:pattern "^http://issn.org/resource/ISSN-H/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9]$";
+  sh:property issnshapes:P201, issnshapes:P202, issnshapes:P203 .
+
+issnshapes:ISSN-H-target sh:select """# an ISSN-H is defined as any resource with a URI starting with \".../ISSN-H\"
+SELECT ?this
+WHERE {
+ ?this ?p ?o .
+ FILTER(STRSTARTS(STR(?this), \"http://issn.org/resource/ISSN-H/\"))
+}""" .
+
+issnshapes:ISSNHRecord a sh:NodeShape;
+  rdfs:label "ISSN-H Record"@en;
+  sh:nodeKind sh:IRI;
+  sh:order "38"^^xsd:integer;
+  sh:pattern "^http://issn.org/resource/ISSN-H/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9]#Record";
+  sh:property issnshapes:P207, issnshapes:P208 .
+
+issnshapes:ISSNHID a sh:NodeShape;
+  rdfs:label "ISSN-H Identifiers"@en;
+  sh:nodeKind sh:IRI;
+  sh:order "40"^^xsd:integer;
+  sh:pattern "^http://issn.org/resource/ISSN-H/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9]#ISSN-H$";
+  sh:property issnshapes:P212, issnshapes:P213 .
 
 issnshapes:CarrierType a sh:NodeShape;
   rdfs:label "Vocab : Carrier Type"@en;
   sh:nodeKind sh:IRI;
-  sh:order "43"^^xsd:integer;
-  sh:property issnshapes:P203 .
+  sh:order "44"^^xsd:integer;
+  sh:property issnshapes:P217 .
 
 issnshapes:ContentType a sh:NodeShape;
   rdfs:label "Vocab : ContentType"@en;
   sh:nodeKind sh:IRI;
-  sh:order "44"^^xsd:integer;
-  sh:property issnshapes:P204 .
+  sh:order "45"^^xsd:integer;
+  sh:property issnshapes:P218 .
 
 issnshapes:MediaType a sh:NodeShape;
   rdfs:label "Vocab : MediaType"@en;
   sh:nodeKind sh:IRI;
-  sh:order "45"^^xsd:integer;
-  sh:property issnshapes:P205 .
+  sh:order "46"^^xsd:integer;
+  sh:property issnshapes:P219 .
 
 issnshapes:Regularity a sh:NodeShape;
   rdfs:label "Vocab : Regularity"@en;
   sh:nodeKind sh:IRI;
-  sh:order "46"^^xsd:integer;
-  sh:property issnshapes:P206 .
+  sh:order "47"^^xsd:integer;
+  sh:property issnshapes:P220 .
 
 issnshapes:DCFormat a sh:NodeShape;
   rdfs:label "Vocab : DCFormat"@en;
   sh:nodeKind sh:IRI;
-  sh:order "47"^^xsd:integer;
-  sh:property issnshapes:P207 .
+  sh:order "48"^^xsd:integer;
+  sh:property issnshapes:P221 .
 
 issnshapes:MARCCountry a sh:NodeShape;
   rdfs:label "Vocab : MARCCountry"@en;
   sh:nodeKind sh:IRI;
-  sh:order "48"^^xsd:integer;
-  sh:property issnshapes:P208 .
+  sh:order "49"^^xsd:integer;
+  sh:property issnshapes:P222 .
 
 issnshapes:DCTType a sh:NodeShape;
   rdfs:label "Vocab : DCTType"@en;
   sh:nodeKind sh:IRI;
-  sh:order "49"^^xsd:integer;
-  sh:property issnshapes:P209 .
+  sh:order "50"^^xsd:integer;
+  sh:property issnshapes:P223 .
 
 issnshapes:PublicationStatus a sh:NodeShape;
   rdfs:label "Vocab : PublicationStatus"@en;
   sh:nodeKind sh:IRI;
-  sh:order "50"^^xsd:integer;
-  sh:property issnshapes:P210 .
+  sh:order "51"^^xsd:integer;
+  sh:property issnshapes:P224 .
 
 issnshapes:FormOriginalItem a sh:NodeShape;
   rdfs:label "Vocab : FormOriginalItem"@en;
   sh:nodeKind sh:IRI;
-  sh:order "51"^^xsd:integer;
-  sh:property issnshapes:P211 .
+  sh:order "52"^^xsd:integer;
+  sh:property issnshapes:P225 .
 
 issnshapes:FormItem a sh:NodeShape;
   rdfs:label "Vocab : FormItem"@en;
   sh:nodeKind sh:IRI;
-  sh:order "52"^^xsd:integer;
-  sh:property issnshapes:P212 .
+  sh:order "53"^^xsd:integer;
+  sh:property issnshapes:P226 .
 
 issnshapes:OriginalAlphabet a sh:NodeShape;
   rdfs:label "Vocab : OriginalAlphabet"@en;
   sh:nodeKind sh:IRI;
-  sh:order "53"^^xsd:integer;
-  sh:property issnshapes:P213 .
+  sh:order "54"^^xsd:integer;
+  sh:property issnshapes:P227 .
 
 issnshapes:UDCAbout a sh:NodeShape;
   rdfs:label "Vocab : UDCAbout"@en;
   sh:nodeKind sh:IRI;
-  sh:order "54"^^xsd:integer;
-  sh:property issnshapes:P214 .
+  sh:order "55"^^xsd:integer;
+  sh:property issnshapes:P228 .
 
 issnshapes:InLanguage a sh:NodeShape;
   rdfs:label "Vocab : InLanguage"@en;
   sh:nodeKind sh:IRI;
-  sh:order "55"^^xsd:integer;
-  sh:property issnshapes:P215 .
+  sh:order "56"^^xsd:integer;
+  sh:property issnshapes:P229 .
 
 issnshapes:Status a sh:NodeShape;
   rdfs:label "Vocab : Status"@en;
   sh:nodeKind sh:IRI;
-  sh:order "56"^^xsd:integer;
-  sh:property issnshapes:P216 .
+  sh:order "57"^^xsd:integer;
+  sh:property issnshapes:P230 .
 
 issnshapes:IDStatus a sh:NodeShape;
   rdfs:label "Vocab : IDStatus"@en;
   sh:nodeKind sh:IRI;
-  sh:order "57"^^xsd:integer;
-  sh:property issnshapes:P217 .
+  sh:order "58"^^xsd:integer;
+  sh:property issnshapes:P231 .
 
 issnshapes:ISOCountry a sh:NodeShape;
   rdfs:label "Vocab : ISOCountry"@en;
   sh:nodeKind sh:IRI;
-  sh:order "58"^^xsd:integer .
+  sh:order "59"^^xsd:integer .
 
 issnshapes:Medium a sh:NodeShape;
   rdfs:label "Vocab : Medium"@en;
   sh:nodeKind sh:IRI;
-  sh:order "59"^^xsd:integer;
-  sh:property issnshapes:P219 .
+  sh:order "60"^^xsd:integer;
+  sh:property issnshapes:P233 .
 
 issnshapes:Freq a sh:NodeShape;
   rdfs:label "Vocab : Frequence"@en;
   sh:nodeKind sh:IRI;
-  sh:order "60"^^xsd:integer;
-  sh:property issnshapes:P220 .
+  sh:order "61"^^xsd:integer;
+  sh:property issnshapes:P234 .
 
-issnshapes:P9 sh:path rdf:type;
+issnshapes:RecordStatusIssnH a sh:NodeShape;
+  rdfs:label "Vocab : Record Status Issn-H"@en;
+  sh:nodeKind sh:IRI;
+  sh:order "62"^^xsd:integer;
+  sh:property issnshapes:P235 .
+
+issnshapes:P9 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
-  sh:minCount "1"^^xsd:integer;
-  sh:maxCount "1"^^xsd:integer;
-  sh:in _:73b5c5b2b41e44ccb84226da5ecac5c76 .
+  sh:minCount "3"^^xsd:integer;
+  sh:maxCount "3"^^xsd:integer;
+  sh:in _:ae587f1f220542eb847087bc3e2b86376;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c76 rdf:first schema:Periodical;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c77 .
+_:ae587f1f220542eb847087bc3e2b86376 rdf:first schema:Periodical;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b86377 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c77 rdf:first bf:Work;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c78 .
+_:ae587f1f220542eb847087bc3e2b86377 rdf:first bf:Work;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b86378 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c78 rdf:first bf:Instance;
+_:ae587f1f220542eb847087bc3e2b86378 rdf:first bf:Instance;
   rdf:rest rdf:nil .
 
-issnshapes:P10 sh:path bf:carrier;
+issnshapes:P10 a skos:Concept;
+  sh:path bf:carrier;
   sh:name "carrier type"@en;
   sh:description "Categorization reflecting the format of the storage medium and housing of a carrier."@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:CarrierType;
   sh:group issnshapes:controlledVocs;
-  dct:source "'338$b" .
+  dct:source "'338$b";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P11 sh:path bf:classification;
+issnshapes:P11 a skos:Concept;
+  sh:path bf:classification;
   sh:name "classification"@en;
   sh:description "This property refers to a classification object giving the classification value and the classification scheme it comes from."@en;
   sh:nodeKind sh:BlankNode;
   sh:node issnshapes:ISSNClassification;
-  dct:source "'080$a, 082$a" .
+  dct:source "'080$a, 082$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P12 sh:path bf:content;
+issnshapes:P12 a skos:Concept;
+  sh:path bf:content;
   sh:name "content type"@en;
   sh:description "\"Categorization reflecting the fundamental form of communication in which the content is expressed and the human sense through which it is intended to be perceived.\""@en;
   sh:node issnshapes:ContentType;
   sh:group issnshapes:controlledVocs;
-  dct:source "'336$b" .
+  dct:source "'336$b";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P13 sh:path bf:hasReproduction;
+issnshapes:P13 a skos:Concept;
+  sh:path bf:hasReproduction;
   sh:name "reproduced as"@en;
   sh:description "This property refers to another resource that reproduces this resource (a blank node)"@en;
   sh:nodeKind sh:BlankNode;
   sh:node issnshapes:ISSNReproductions;
-  dct:source "'533" .
+  dct:source "'533";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P14 sh:path bf:identifiedBy;
+issnshapes:P14 a skos:Concept;
+  sh:path bf:identifiedBy;
   sh:name "identified by"@en;
   sh:description "This property refers to an identifier of the resource : an ISSN, ISSN-L, CODEN, key title or abbreviated key title."@en;
   sh:minCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNID;
-  dct:source "'022$a, 022$l, 030$a, 210$a, 222$a" .
+  dct:source "'022$a, 022$l, 030$a, 210$a, 222$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P15 sh:path bf:mainTitle;
+issnshapes:P15 a skos:Concept;
+  sh:path bf:mainTitle;
   sh:name "main title"@en;
   sh:description "This property contains the title proper of the resource."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'245$a + $n + $p if present" .
+  dct:source "'245$a + $n + $p if present";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P16 sh:path bf:media;
+issnshapes:P16 a skos:Concept;
+  sh:path bf:media;
   sh:name "media type"@en;
   sh:description "\"Categorization reflecting the general type of intermediation device required to view, play, run, etc., the content of a resource.\""@en;
   sh:node issnshapes:MediaType;
   sh:group issnshapes:controlledVocs;
-  dct:source "'337$b" .
+  dct:source "'337$b";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P17 sh:path bf:note;
+issnshapes:P17 a skos:Concept;
+  sh:path bf:note;
   sh:name "note"@en;
   sh:description "This property refers to a note object (blank node) that gives additional descriptive information associated with the resource."@en;
   sh:nodeKind sh:BlankNode;
   sh:node issnshapes:ISSNNote;
-  dct:source "588$a" .
+  dct:source "588$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P18 sh:path bf:provisionActivityStatement;
+issnshapes:P18 a skos:Concept;
+  sh:path bf:provisionActivityStatement;
   sh:name "provision activity statement"@en;
   sh:description "This property transcribes the statement relating to providers of a resource, generally known as “publication statement”"@en;
   sh:minCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'260#, 2602, 2603, 264#, 2642, 2643" .
+  dct:source "'260#, 2602, 2603, 264#, 2642, 2643";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P19 sh:path bf:title;
+issnshapes:P19 a skos:Concept;
+  sh:path bf:title;
   sh:name "title"@en;
   sh:description "This property refers to one of the title object for the ISSN resource."@en;
   sh:node issnshapes:ISSNTitle;
-  dct:source "'245$a, 246#$a, 2461$a, 2462$a, 2463$a, 2464$a, 2465$a, 2466$a, 2467$a, 2468$a" .
+  dct:source "'245$a, 246#$a, 2461$a, 2462$a, 2463$a, 2464$a, 2465$a, 2466$a, 2467$a, 2468$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P20 sh:path bfmarc:regularity;
+issnshapes:P20 a skos:Concept;
+  sh:path bfmarc:regularity;
   sh:name "regularity"@en;
   sh:description "The intended publication regularity of a continuing resource"@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node m21terms:continuingreg;
   sh:group issnshapes:controlledVocs;
-  dct:source "'008/19" .
+  dct:source "'008/19";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P21 sh:path bfmarc:reproductionNote;
+issnshapes:P21 a skos:Concept;
+  sh:path bfmarc:reproductionNote;
   sh:name "reproduction note"@en;
   sh:description "This property stores the reproduction note as a string literal."@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'533" .
+  dct:source "'533";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P22 sh:path bfrel:isb;
+issnshapes:P22 a skos:Concept;
+  sh:path bfrel:isb;
   sh:name "issuing body"@en;
   sh:description "This property relates the resource to the organization in charge of editing its intellectual content (generally a university, a specific department within an internationalorganization…). In very rare cases, it may be an individual person. In the ISSN data model, this property is similar to schema:contributor but it is used in parallel as more precise."@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNOrganization;
-  dct:source "710$a, 710$b, 711$a,720" .
+  dct:source "710$a, 710$b, 711$a,720";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P23 sh:path bibo:issn;
+issnshapes:P23 a skos:Concept;
+  sh:path bibo:issn;
   sh:name "issn"@en;
   sh:description "This property contains the ISSN string of the continuing resource."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'022$a" .
+  dct:source "'022$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P24 sh:path dc:format;
+issnshapes:P24 a skos:Concept;
+  sh:path dc:format;
   sh:name "format"@en;
   sh:description "Special information about the physical characteristics of the resource. They are often related to information in other parts of the MARC record especially from field 300 (Physical Description) or one of the 5XX note field"@en;
   sh:minCount "1"^^xsd:integer;
   sh:node issnshapes:Medium;
-  sh:in _:73b5c5b2b41e44ccb84226da5ecac5c79;
+  sh:in _:ae587f1f220542eb847087bc3e2b86379;
   sh:group issnshapes:controlledVocs;
-  dct:source "007" .
+  dct:source "007";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c79 rdf:first media:Print;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c710 .
+_:ae587f1f220542eb847087bc3e2b86379 rdf:first media:Print;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863710 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c710 rdf:first media:Online;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c711 .
+_:ae587f1f220542eb847087bc3e2b863710 rdf:first media:Online;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863711 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c711 rdf:first media:DigitalCarrier;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c712 .
+_:ae587f1f220542eb847087bc3e2b863711 rdf:first media:DigitalCarrier;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863712 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c712 rdf:first media:Other;
+_:ae587f1f220542eb847087bc3e2b863712 rdf:first media:Other;
   rdf:rest rdf:nil .
 
-issnshapes:P25 sh:path dc:identifier;
+issnshapes:P25 a skos:Concept;
+  sh:path dc:identifier;
   sh:name "identifier"@en;
   sh:description "This property contains the ISSN string of the continuing resource."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'022$a" .
+  dct:source "'022$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P26 sh:path dct:accrualPeriodicity;
+issnshapes:P26 a skos:Concept;
+  sh:path dct:accrualPeriodicity;
   sh:name "accrual periodicity"@en;
   sh:description "This property contains the publication frequency of the continuing resource, from the Dublin Core Collection Description Frequency Namespace, or as the literal values \"unknown\" or \"other\"."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:or _:73b5c5b2b41e44ccb84226da5ecac5c713;
-  dct:source "'008/18" .
+  sh:or _:ae587f1f220542eb847087bc3e2b863713;
+  dct:source "'008/18";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c713 rdf:first _:73b5c5b2b41e44ccb84226da5ecac5c714;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c715 .
+_:ae587f1f220542eb847087bc3e2b863713 rdf:first _:ae587f1f220542eb847087bc3e2b863714;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863715 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c714 sh:node issnshapes:Freq .
+_:ae587f1f220542eb847087bc3e2b863714 sh:node issnshapes:Freq .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c715 rdf:first _:73b5c5b2b41e44ccb84226da5ecac5c716;
+_:ae587f1f220542eb847087bc3e2b863715 rdf:first _:ae587f1f220542eb847087bc3e2b863716;
   rdf:rest rdf:nil .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c716 sh:in _:73b5c5b2b41e44ccb84226da5ecac5c717 .
+_:ae587f1f220542eb847087bc3e2b863716 sh:in _:ae587f1f220542eb847087bc3e2b863717 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c717 rdf:first "unknown";
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c718 .
+_:ae587f1f220542eb847087bc3e2b863717 rdf:first "unknown";
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863718 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c718 rdf:first "other";
+_:ae587f1f220542eb847087bc3e2b863718 rdf:first "other";
   rdf:rest rdf:nil .
 
-issnshapes:P27 sh:path dct:spatial;
+issnshapes:P27 a skos:Concept;
+  sh:path dct:spatial;
   sh:name "spatial"@en;
   sh:description "This property links the resource to the reference country of its publisher, which is generally used to decide what National Centre is responsible for ISSN assignment"@en;
   sh:minCount "2"^^xsd:integer;
   sh:maxCount "2"^^xsd:integer;
-  sh:or _:73b5c5b2b41e44ccb84226da5ecac5c719;
+  sh:or _:ae587f1f220542eb847087bc3e2b863719;
   sh:group issnshapes:controlledVocs;
-  dct:source "'008/15-17, 044$c" .
+  dct:source "'008/15-17, 044$c";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c719 rdf:first _:73b5c5b2b41e44ccb84226da5ecac5c720;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c721 .
+_:ae587f1f220542eb847087bc3e2b863719 rdf:first _:ae587f1f220542eb847087bc3e2b863720;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863721 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c720 sh:node issnshapes:MARCCountry .
+_:ae587f1f220542eb847087bc3e2b863720 sh:node issnshapes:MARCCountry .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c721 rdf:first _:73b5c5b2b41e44ccb84226da5ecac5c722;
+_:ae587f1f220542eb847087bc3e2b863721 rdf:first _:ae587f1f220542eb847087bc3e2b863722;
   rdf:rest rdf:nil .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c722 sh:node issnshapes:ISOCountry .
+_:ae587f1f220542eb847087bc3e2b863722 sh:node issnshapes:ISOCountry .
 
-issnshapes:P28 sh:path dct:type;
+issnshapes:P28 a skos:Concept;
+  sh:path dct:type;
   sh:name "type"@en;
   sh:description "This property indicates the type of material of the resource, which will decide on the type of record which will be used to describe it"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:node issnshapes:DCFormat;
   sh:group issnshapes:controlledVocs;
-  dct:source "'LDR/06" .
+  dct:source "'LDR/06";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P29 sh:path issnprop:hasCancelledISSN-L;
+issnshapes:P29 a skos:Concept;
+  sh:path issnprop:hasCancelledISSN-L;
   sh:name "has cancelled ISSN-L"@en;
   sh:description "This property indicates the value of a former ISSN-L of the resource, which has been cancelled. This generally happens when it is recognized that a link between two different medium versions of the same resource has not been recorded in the original record."@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'022$m" .
+  dct:source "023$z first indicator 0";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P30 sh:path issnprop:hasIncorrectISSN;
+issnshapes:P30 a skos:Concept;
+  sh:path issnprop:hasCancelledISSN-H;
+  sh:name "has cancelled ISSN-H"@en;
+  sh:description "This property indicates the value of a former ISSN-H of the resource, but this link has been cancelled. This happens for instance when two ISSN-H clusters merged together which means that one ISSN-H becomes obsolete."@en;
+  sh:nodeKind sh:Literal;
+  sh:datatype xsd:string;
+  dct:source "023$z first indicator 1";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
+
+issnshapes:P31 a skos:Concept;
+  sh:path issnprop:hasIncorrectISSN;
   sh:name "has incorrect ISSN"@en;
   sh:description "This property indicates the value of an incorrect ISSN wrongly displayed on the resource. The incorrect ISSN may be structurally invalid (e.g. wrong control number) or it may be a valid ISSN assigned to another resource."@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'022$y" .
+  dct:source "'022$y";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P31 sh:path m2100X:M00806;
+issnshapes:P32 a skos:Concept;
+  sh:path m2100X:M00806;
   sh:name "Type of date or Publication status of All materials"@en;
   sh:description "This property indicates if the resource is currently published, ceased, or if its status is unknown"@en;
   sh:minCount "1"^^xsd:integer;
@@ -553,18 +703,24 @@ issnshapes:P31 sh:path m2100X:M00806;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:PublicationStatus;
   sh:group issnshapes:controlledVocs;
-  dct:source "'008/06" .
+  dct:source "'008/06";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P32 sh:path m2100X:M008CR22;
+issnshapes:P33 a skos:Concept;
+  sh:path m2100X:M008CR22;
   sh:name "Form of original item of Continuing Resources"@en;
   sh:description "This property indicates the form of material in which an item was originally published"@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:FormOriginalItem;
   sh:group issnshapes:controlledVocs;
-  dct:source "'008/22" .
+  dct:source "'008/22";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P33 sh:path m2100X:M008CR23;
+issnshapes:P34 a skos:Concept;
+  sh:path m2100X:M008CR23;
   sh:name "Form of item of Continuing Resources"@en;
   sh:description "This property indicates the form of material for the item being described"@en;
   sh:minCount "1"^^xsd:integer;
@@ -572,9 +728,12 @@ issnshapes:P33 sh:path m2100X:M008CR23;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:FormItem;
   sh:group issnshapes:controlledVocs;
-  dct:source "'008/23" .
+  dct:source "'008/23";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P34 sh:path m2100X:M008CR33;
+issnshapes:P35 a skos:Concept;
+  sh:path m2100X:M008CR33;
   sh:name "Original alphabet or script of title of Continuing Resources"@en;
   sh:description "This property indicates the original alphabet or script of the language of the title on the source item upon which the key title is based"@en;
   sh:minCount "1"^^xsd:integer;
@@ -582,1271 +741,1843 @@ issnshapes:P34 sh:path m2100X:M008CR33;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:OriginalAlphabet;
   sh:group issnshapes:controlledVocs;
-  dct:source "'008/33" .
+  dct:source "'008/33";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P35 sh:path m213XX:M3620_a;
+issnshapes:P36 a skos:Concept;
+  sh:path m213XX:M3620_a;
   sh:name "Dates of publication and sequential designation in Dates of Publication and Sequential Designation (Formatted style)"@en;
   sh:description "This property indicates the beginning/ending date(s) of a resource and/or the sequential designations used on each part. The information is formatted. Dates in this field may be identical to the information in fields 008/07-10 (start date) and/or 008/11-14 (end date)"@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'3620$a" .
+  dct:source "'3620$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P36 sh:path m213XX:M3620_z;
+issnshapes:P37 a skos:Concept;
+  sh:path m213XX:M3620_z;
   sh:name "Source of information in Dates of Publication and Sequential Designation (Formatted style)"@en;
   sh:description "This property provides additional information about the source of information used to record the Dates of Publication and Sequential Designation"@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'3620$z" .
+  dct:source "'3620$z";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P37 sh:path m213XX:M3621_a;
+issnshapes:P38 a skos:Concept;
+  sh:path m213XX:M3621_a;
   sh:name "Dates of publication and sequential designation in Dates of Publication and Sequential Designation (Unformatted note)"@en;
   sh:description "This property indicates the beginning/ending date(s) of a resource and/or the sequential designations used on each part. The information is unformatted."@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'3621$a" .
+  dct:source "'3621$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P38 sh:path m213XX:M3621_z;
+issnshapes:P39 a skos:Concept;
+  sh:path m213XX:M3621_z;
   sh:name "Source of information in Dates of Publication and Sequential Designation (Unformatted note)"@en;
   sh:description "This property provides additional information about the source of information used to record the Dates of Publication and Sequential Designation"@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'3621$z" .
+  dct:source "'3621$z";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P39 sh:path rdf:type;
+issnshapes:P40 a skos:Concept;
+  sh:path rdf:type;
   sh:name "additionnal type"@en;
   sh:description "An additionnal rdf:type statement may be expressed on the resource depending on its characteristics."@en;
-  sh:in _:73b5c5b2b41e44ccb84226da5ecac5c723;
-  dct:source "'007, 008/21" .
+  sh:in _:ae587f1f220542eb847087bc3e2b863723;
+  dct:source "'007, 008/21";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c723 rdf:first schema:Dataset;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c724 .
+_:ae587f1f220542eb847087bc3e2b863723 rdf:first schema:Dataset;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863724 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c724 rdf:first schema:BookSeries;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c725 .
+_:ae587f1f220542eb847087bc3e2b863724 rdf:first schema:BookSeries;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863725 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c725 rdf:first schema:WebSite;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c726 .
+_:ae587f1f220542eb847087bc3e2b863725 rdf:first schema:WebSite;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863726 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c726 rdf:first schema:Atlas;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c727 .
+_:ae587f1f220542eb847087bc3e2b863726 rdf:first schema:Atlas;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863727 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c727 rdf:first schema:Map;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c728 .
+_:ae587f1f220542eb847087bc3e2b863727 rdf:first schema:Map;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863728 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c728 rdf:first schema:AudioObject;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c729 .
+_:ae587f1f220542eb847087bc3e2b863728 rdf:first schema:AudioObject;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863729 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c729 rdf:first schema:VideoObject;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c730 .
+_:ae587f1f220542eb847087bc3e2b863729 rdf:first schema:VideoObject;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863730 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c730 rdf:first schema:Newspaper;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c731 .
+_:ae587f1f220542eb847087bc3e2b863730 rdf:first schema:Newspaper;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863731 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c731 rdf:first bf:Tactile;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c732 .
+_:ae587f1f220542eb847087bc3e2b863731 rdf:first bf:Tactile;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863732 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c732 rdf:first dctype:Text;
+_:ae587f1f220542eb847087bc3e2b863732 rdf:first dctype:Text;
   rdf:rest rdf:nil .
 
-issnshapes:P40 sh:path schema:about;
+issnshapes:P41 a skos:Concept;
+  sh:path schema:about;
   sh:name "about"@en;
   sh:description "This property refers to a classification URI value from the UDC Summary."@en;
   sh:node issnshapes:UDCAbout;
   sh:group issnshapes:controlledVocs;
-  dct:source "'989$u" .
+  dct:source "'989$u";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P41 sh:path schema:alternateName;
+issnshapes:P42 a skos:Concept;
+  sh:path schema:alternateName;
   sh:name "alternate name"@en;
   sh:description "This property contains an alternate title for the continuing resource i.e. any title other than the key title and title proper."@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'210$a+210$b, 222$a+222$b, 246a, 246$1, 246$2, 246$3, 246$4, 246$5, 246$6, 246$7, 246$8" .
+  dct:source "'210$a+210$b, 222$a+222$b, 246a, 246$1, 246$2, 246$3, 246$4, 246$5, 246$6, 246$7, 246$8";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P42 sh:path schema:contributor;
+issnshapes:P43 a skos:Concept;
+  sh:path schema:contributor;
   sh:name "contributor"@en;
   sh:description "This property relates the resource to the organization in charge of editing its intellectual content (generally a university, a specific department within an international organization…). In very rare cases, it may be an individual person. In the ISSN data model, this property is similar to bfrel:isb but has been kept in parallel as it is a schema.org property."@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNOrganization;
-  dct:source "'710$a, 710$b, 711$a" .
+  dct:source "'710$a, 710$b, 711$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P43 sh:path schema:endDate;
+issnshapes:P44 a skos:Concept;
+  sh:path schema:endDate;
   sh:name "end date"@en;
   sh:description "This property contains the end date of the ISSN. The value \"u\" indicates that the date or a part of a date is unknown. Hence the datatype is kept as xsd:string. Value 9999 means that the resource is still running."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'008/11-14" .
+  dct:source "'008/11-14";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P44 sh:path schema:inLanguage;
+issnshapes:P45 a skos:Concept;
+  sh:path schema:inLanguage;
   sh:name "in language"@en;
   sh:description "This property refers to the language of the continuing resource."@en;
   sh:minCount "1"^^xsd:integer;
   sh:node issnshapes:InLanguage;
   sh:group issnshapes:controlledVocs;
-  dct:source "'008/35-37, 041$a" .
+  dct:source "'008/35-37, 041$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P45 sh:path schema:isPartOf;
+issnshapes:P46 a skos:Concept;
+  sh:path schema:isPartOf;
   sh:name "is part of"@en;
-  sh:description "This property refers to the ISSN-L of which this ISSN is part of (http://issn.org/resource/{ISSN-L})."@en;
+  sh:description "This property refers to the ISSN-L or to the ISSN-H of which this ISSN is part of. There is always one ISSN-L, but not always an ISSN-H for each ISSN."@en;
   sh:minCount "1"^^xsd:integer;
-  sh:maxCount "1"^^xsd:integer;
-  sh:node issnshapes:ISSN-L;
-  dct:source "'022$l" .
+  sh:maxCount "2"^^xsd:integer;
+  sh:nodeKind sh:IRI;
+  sh:or _:ae587f1f220542eb847087bc3e2b863733;
+  dct:source "023$a first indicator 0 for ISSN-L or 1 for ISSN-H";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P46 sh:path schema:issn;
+_:ae587f1f220542eb847087bc3e2b863733 rdf:first _:ae587f1f220542eb847087bc3e2b863734;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863735 .
+
+_:ae587f1f220542eb847087bc3e2b863734 sh:node issnshapes:ISSN-L .
+
+_:ae587f1f220542eb847087bc3e2b863735 rdf:first _:ae587f1f220542eb847087bc3e2b863736;
+  rdf:rest rdf:nil .
+
+_:ae587f1f220542eb847087bc3e2b863736 sh:node issnshapes:ISSN-H .
+
+issnshapes:P47 a skos:Concept;
+  sh:path schema:issn;
   sh:name "issn"@en;
   sh:description "This property contains the ISSN string of the continuing resource."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'022$a" .
+  dct:source "'022$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P47 sh:path schema:keywords;
+issnshapes:P48 a skos:Concept;
+  sh:path schema:keywords;
   sh:name "keywords"@en;
   sh:description "The label of the UDC classification summary"@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'989$a" .
+  dct:source "'989$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P48 sh:path schema:name;
+issnshapes:P49 a skos:Concept;
+  sh:path schema:name;
   sh:name "name"@en;
   sh:description "This property contains the key title and title proper of the continuing resource."@en;
   sh:minCount "2"^^xsd:integer;
   sh:maxCount "2"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'222$a, 245$a" .
+  dct:source "'222$a, 245$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P49 sh:path schema:publication;
+issnshapes:P50 a skos:Concept;
+  sh:path schema:publication;
   sh:name "publication"@en;
   sh:description "This property refers on one hand to the reference publication event of that ISSN resource (#ReferencePublicationEvent), and on the other hand to each of the publication event in the publication history (#EarliestPublicationEvent, #InterveningPublicationEvent{n}, #LatestPublicationEvent)."@en;
   sh:minCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNPublicationEvent;
-  dct:source "'008/15-17, 260#, 2602, 2603, 264#, 2642, 2643" .
+  dct:source "'008/15-17, 260#, 2602, 2603, 264#, 2642, 2643";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P50 sh:path schema:publisher;
+issnshapes:P51 a skos:Concept;
+  sh:path schema:publisher;
   sh:name "publisher"@en;
   sh:description "This property refers to the publisher(s) of the resource (#Publisher-{publisherName}). In very rare cases, it may be an individual person even though the schema:Organization class is used, as this person is acting as an organization."@en;
   sh:minCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNOrganization;
-  dct:source "'260#$b, 2602$b, 2603$b, 264#$b, 2642$b, 2643$b" .
+  dct:source "'260#$b, 2602$b, 2603$b, 264#$b, 2642$b, 2643$b";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P51 sh:path schema:startDate;
+issnshapes:P52 a skos:Concept;
+  sh:path schema:startDate;
   sh:name "start date"@en;
   sh:description "This property contains the start date of the ISSN. The value \"u\" indicates that the date or a part of the date is unknown. Hence the datatype is kept as xsd:string"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'008/07-10" .
+  dct:source "'008/07-10";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P52 sh:path schema:url;
+issnshapes:P53 a skos:Concept;
+  sh:path schema:url;
   sh:name "url"@en;
   sh:description "This property indicates the URL address where the resource may be accessed or was previously accessible. It may also link to a web archive."@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "'856$u" .
+  dct:source "'856$u";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P53 sh:path schema:subjectOf;
+issnshapes:P54 a skos:Concept;
+  sh:path schema:subjectOf;
   sh:name "subject of"@en;
   sh:description "This property links an Online ISSN to a record from the Keeper's registry indicating this serial is archived by an archiving institution"@en;
   sh:nodeKind sh:BlankNode;
   sh:node issnshapes:ISSNKeepersArchive;
-  dct:source "'920" .
+  dct:source "'920";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P54 sh:path _:73b5c5b2b41e44ccb84226da5ecac5c733;
+issnshapes:P55 a skos:Concept;
+  sh:path _:ae587f1f220542eb847087bc3e2b863737;
   sh:name "main entity of"@en;
   sh:description "Inverse of schema:mainEntity"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
-  sh:node issnshapes:ISSNRecord .
+  sh:node issnshapes:ISSNRecord;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c733 sh:inversePath schema:mainEntity .
+_:ae587f1f220542eb847087bc3e2b863737 sh:inversePath schema:mainEntity .
 
-issnshapes:P56 sh:path bf:absorbed;
+issnshapes:P57 a skos:Concept;
+  sh:path bf:absorbed;
   sh:name "absorbed"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "78005$x, 78006$x" .
+  dct:source "78005$x, 78006$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P57 sh:path bf:absorbedBy;
+issnshapes:P58 a skos:Concept;
+  sh:path bf:absorbedBy;
   sh:name "absorbed by"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "78504$x, 78505$x" .
+  dct:source "78504$x, 78505$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P58 sh:path bf:continuedBy;
+issnshapes:P59 a skos:Concept;
+  sh:path bf:continuedBy;
   sh:name "continued by"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "78500$x" .
+  dct:source "78500$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P59 sh:path bf:continuedInPartBy;
+issnshapes:P60 a skos:Concept;
+  sh:path bf:continuedInPartBy;
   sh:name "continued in part by"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "78501$x" .
+  dct:source "78501$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P60 sh:path bf:continues;
+issnshapes:P61 a skos:Concept;
+  sh:path bf:continues;
   sh:name "continues"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "78000$x" .
+  dct:source "78000$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P61 sh:path bf:continuesInPart;
+issnshapes:P62 a skos:Concept;
+  sh:path bf:continuesInPart;
   sh:name "continues in part"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "78001$x" .
+  dct:source "78001$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P62 sh:path bf:hasSubseries;
+issnshapes:P63 a skos:Concept;
+  sh:path bf:hasSubseries;
   sh:name "hasSubseries"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "762$x" .
+  dct:source "762$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P63 sh:path bf:issuedWith;
+issnshapes:P64 a skos:Concept;
+  sh:path bf:issuedWith;
   sh:name "issuedWith"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "777$x" .
+  dct:source "777$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P64 sh:path bf:mergedToForm;
+issnshapes:P65 a skos:Concept;
+  sh:path bf:mergedToForm;
   sh:name "merged to form"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "78507$x" .
+  dct:source "78507$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P65 sh:path bf:mergerOf;
+issnshapes:P66 a skos:Concept;
+  sh:path bf:mergerOf;
   sh:name "merger of"@en;
   sh:description "The property is repeated to reflect the merge."@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "78004$x" .
+  dct:source "78004$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P66 sh:path bf:otherEdition;
+issnshapes:P67 a skos:Concept;
+  sh:path bf:otherEdition;
   sh:name "other edition"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "775$x" .
+  dct:source "775$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P67 sh:path bf:otherPhysicalFormat;
+issnshapes:P68 a skos:Concept;
+  sh:path bf:otherPhysicalFormat;
   sh:name "other physical format"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "776$x" .
+  dct:source "776$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P68 sh:path bf:precededBy;
+issnshapes:P69 a skos:Concept;
+  sh:path bf:precededBy;
   sh:name "preceded by"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "7800#$x" .
+  dct:source "7800#$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P69 sh:path bf:replacedBy;
+issnshapes:P70 a skos:Concept;
+  sh:path bf:replacedBy;
   sh:name "replaced by"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "78502$x, 78503$x" .
+  dct:source "78502$x, 78503$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P70 sh:path bf:replacementOf;
+issnshapes:P71 a skos:Concept;
+  sh:path bf:replacementOf;
   sh:name "replacement of"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "78002$x, 78003$x" .
+  dct:source "78002$x, 78003$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P71 sh:path bf:separatedFrom;
+issnshapes:P72 a skos:Concept;
+  sh:path bf:separatedFrom;
   sh:name "separated form"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "78007$x" .
+  dct:source "78007$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P72 sh:path bf:splitInto;
+issnshapes:P73 a skos:Concept;
+  sh:path bf:splitInto;
   sh:name "split into"@en;
   sh:description "The property is repeated to reflect the split."@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "78506$x" .
+  dct:source "78506$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P73 sh:path bf:subseriesOf;
+issnshapes:P74 a skos:Concept;
+  sh:path bf:subseriesOf;
   sh:name "subseries of"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "760$x" .
+  dct:source "760$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P74 sh:path bf:supplement;
+issnshapes:P75 a skos:Concept;
+  sh:path bf:supplement;
   sh:name "supplement"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "772$x" .
+  dct:source "772$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P75 sh:path bf:supplementTo;
+issnshapes:P76 a skos:Concept;
+  sh:path bf:supplementTo;
   sh:name "supplement to"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "770$x" .
+  dct:source "770$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P76 sh:path bf:translation;
+issnshapes:P77 a skos:Concept;
+  sh:path bf:translation;
   sh:name "translation"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "767$x" .
+  dct:source "767$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P77 sh:path bf:translationOf;
+issnshapes:P78 a skos:Concept;
+  sh:path bf:translationOf;
   sh:name "translation of"@en;
   sh:description "See Bibframe documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "765$x" .
+  dct:source "765$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P78 sh:path schema:translationOfWork;
+issnshapes:P79 a skos:Concept;
+  sh:path schema:translationOfWork;
   sh:name "translation of work"@en;
   sh:description "See schema.org documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "765$x" .
+  dct:source "765$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P79 sh:path schema:workTranslation;
+issnshapes:P80 a skos:Concept;
+  sh:path schema:workTranslation;
   sh:name "work translation"@en;
   sh:description "See schema.org documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "767$x" .
+  dct:source "767$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P80 sh:path dc:relation;
+issnshapes:P81 a skos:Concept;
+  sh:path dc:relation;
   sh:name "relation"@en;
   sh:description "See DCMI documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "770$x, 772$x, 777$x, 787$x,7800$x, 7850$x, 7870$x" .
+  dct:source "770$x, 772$x, 777$x, 787$x,7800$x, 7850$x, 7870$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P81 sh:path dct:isFormatOf;
+issnshapes:P82 a skos:Concept;
+  sh:path dct:isFormatOf;
   sh:name "is format of"@en;
   sh:description "See DCMI documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "776$x" .
+  dct:source "776$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P82 sh:path dct:isVersionOf;
+issnshapes:P83 a skos:Concept;
+  sh:path dct:isVersionOf;
   sh:name "is version of"@en;
   sh:description "See DCMI documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "775$x" .
+  dct:source "775$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P83 sh:path schema:citation;
+issnshapes:P84 a skos:Concept;
+  sh:path schema:citation;
   sh:name "citation"@en;
   sh:description "This property refers to another continuing resource that is cited by this one."@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "510$x" .
+  dct:source "510$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P84 sh:path dct:hasPart;
+issnshapes:P85 a skos:Concept;
+  sh:path dct:hasPart;
   sh:name "has part"@en;
   sh:description "See DCMI documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "762$x" .
+  dct:source "762$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P85 sh:path dct:isPartOf;
+issnshapes:P86 a skos:Concept;
+  sh:path dct:isPartOf;
   sh:name "is part of"@en;
   sh:description "See DCMI documentation"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "760$x" .
+  dct:source "760$x";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P87 sh:path rdf:type;
+issnshapes:P88 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue prov:Activity .
+  sh:hasValue prov:Activity;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P88 sh:path prov:startedAtTime;
+issnshapes:P89 a skos:Concept;
+  sh:path prov:startedAtTime;
   sh:name "record creation date"@en;
   sh:description "This property holds the date at which the record was created. It is set since 2004."@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:date;
-  dct:source "'039$v" .
+  dct:source "'039$v";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P89 sh:path prov:generated;
+issnshapes:P90 a skos:Concept;
+  sh:path prov:generated;
   sh:name "generated"@en;
   sh:description "This property refers to the entities that the Activity generated : the ISSN Record (http://issn.org/resource/ISSN/{ISSN}#Record) and the identifiers ISSN, ISSN-L, Key title and Abbreviated key title (http://issn.org/resource/ISSN/{ISSN}#ISSN, http://issn.org/resource/ISSN/{ISSN}#ISSN-L, http://issn.org/resource/ISSN/{ISSN}#KeyTitle, http://issn.org/resource/ISSN/{ISSN}#AbbreviatedKeyTitle)"@en;
   sh:minCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
-  sh:or _:73b5c5b2b41e44ccb84226da5ecac5c734;
-  dct:source "'699$v" .
+  sh:or _:ae587f1f220542eb847087bc3e2b863738;
+  dct:source "'699$v";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c734 rdf:first _:73b5c5b2b41e44ccb84226da5ecac5c735;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c736 .
+_:ae587f1f220542eb847087bc3e2b863738 rdf:first _:ae587f1f220542eb847087bc3e2b863739;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863740 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c735 sh:node issnshapes:ISSNRecord .
+_:ae587f1f220542eb847087bc3e2b863739 sh:class schema:Periodical .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c736 rdf:first _:73b5c5b2b41e44ccb84226da5ecac5c737;
+_:ae587f1f220542eb847087bc3e2b863740 rdf:first _:ae587f1f220542eb847087bc3e2b863741;
   rdf:rest rdf:nil .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c737 sh:node issnshapes:ISSNID .
+_:ae587f1f220542eb847087bc3e2b863741 sh:node issnshapes:ISSNID .
 
-issnshapes:P90 sh:path prov:wasAssociatedWith;
+issnshapes:P91 a skos:Concept;
+  sh:path prov:wasAssociatedWith;
   sh:name "was associated with"@en;
   sh:description "This property refers to the ISSN Centre (including ISSN International Centre) that created the record (http://issn.org/organization/ISSNCentre#{CentreCode})"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNOrganization;
-  dct:source "'699$v" .
+  dct:source "'699$v";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P92 sh:path rdf:type;
+issnshapes:P93 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue schema:CreativeWork .
+  sh:hasValue schema:CreativeWork;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P93 sh:path bf:identifiedBy;
+issnshapes:P94 a skos:Concept;
+  sh:path bf:identifiedBy;
   sh:name "identified by"@en;
   sh:description "This property refers to the ISSN-L that identifies this resource."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:class bf:IssnL;
-  dct:source "022$l" .
+  dct:source "023$a first indicator 0";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P94 sh:path schema:hasPart;
+issnshapes:P95 a skos:Concept;
+  sh:path schema:hasPart;
   sh:name "has part"@en;
   sh:description "This property refers to the ISSN resources that are part of this ISSN-L."@en;
   sh:minCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "022$l" .
+  dct:source "023$a first indicator 0";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P96 sh:path rdf:type;
+issnshapes:P97 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue schema:CreativeWork .
+  sh:hasValue schema:CreativeWork;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P97 sh:path dct:modified;
+issnshapes:P98 a skos:Concept;
+  sh:path dct:modified;
   sh:name "modified"@en;
   sh:description "This property contains the date of last modification of the record."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:date;
-  dct:source "'005" .
+  dct:source "'005";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P98 sh:path schema:mainEntity;
+issnshapes:P99 a skos:Concept;
+  sh:path schema:mainEntity;
   sh:name "main entity"@en;
   sh:description "This property refers to the ISSN resource that this record describes (http://issn.org/resource/ISSN/{ISSN})"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNResource;
-  dct:source "'022$2" .
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P99 sh:path prov:wasAttributedTo;
+issnshapes:P100 a skos:Concept;
+  sh:path prov:wasAttributedTo;
   sh:name "was attributed to"@en;
   sh:description "This property refers to the centre that is responsible for the record.The PROV ontology indicates that \"Attribution is the ascribing of an entity to an agent.\" This fits with the intended meaning of the link between the record and the ISSN centre, since ISSN records can be re-attributed between ISSN centres, so the ISSN centre referred to by this property cannot be said to be the \"creator\" or the \"author\" of the record."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNOrganization;
-  dct:source "'022$2" .
+  dct:source "'022$2";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P100 sh:path bf:status;
+issnshapes:P101 a skos:Concept;
+  sh:path bf:status;
   sh:name "status"@en;
   sh:description "This property refers to the status of this record."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:Status;
-  sh:in _:73b5c5b2b41e44ccb84226da5ecac5c738;
+  sh:in _:ae587f1f220542eb847087bc3e2b863742;
   sh:group issnshapes:controlledVocs;
-  dct:source "'699$8" .
+  dct:source "'699$8";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c738 rdf:first recordStatus:Register;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c739 .
+_:ae587f1f220542eb847087bc3e2b863742 rdf:first recordStatus:Register;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863743 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c739 rdf:first recordStatus:Unreported;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c740 .
+_:ae587f1f220542eb847087bc3e2b863743 rdf:first recordStatus:Unreported;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863744 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c740 rdf:first recordStatus:Provisional;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c741 .
+_:ae587f1f220542eb847087bc3e2b863744 rdf:first recordStatus:Provisional;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863745 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c741 rdf:first recordStatus:Legacy;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c742 .
+_:ae587f1f220542eb847087bc3e2b863745 rdf:first recordStatus:Legacy;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863746 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c742 rdf:first recordStatus:Cancelled;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c743 .
+_:ae587f1f220542eb847087bc3e2b863746 rdf:first recordStatus:Cancelled;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863747 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c743 rdf:first recordStatus:Suppressed;
+_:ae587f1f220542eb847087bc3e2b863747 rdf:first recordStatus:Suppressed;
   rdf:rest rdf:nil .
 
-issnshapes:P101 sh:path _:73b5c5b2b41e44ccb84226da5ecac5c744;
+issnshapes:P102 a skos:Concept;
+  sh:path _:ae587f1f220542eb847087bc3e2b863748;
   sh:name "generatedBy"@en;
   sh:description "Inverse of prov:generated"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
-  sh:node issnshapes:ISSNRecordCreation .
+  sh:class prov:Activity;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c744 sh:inversePath prov:generated .
+_:ae587f1f220542eb847087bc3e2b863748 sh:inversePath prov:generated .
 
-issnshapes:P103 sh:path rdf:type;
+issnshapes:P104 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue schema:PublicationEvent .
+  sh:hasValue schema:PublicationEvent;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P104 sh:path schema:location;
+issnshapes:P105 a skos:Concept;
+  sh:path schema:location;
   sh:name "location"@en;
   sh:description "On the #ReferencePublicationEvent, this property will refer to the MARC or ISO code list for the country. Note that the country URI will have an rdfs:label property containing the country name.On the other events in the publication event history, this property refers to the place of the publication event (http://issn.org/resource/ISSN/{ISSN}#PublicationPlace-{placename} or http://issn.org/resource/ISSN/{ISSN}#ReproductionPlace-{placeName})."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
-  sh:or _:73b5c5b2b41e44ccb84226da5ecac5c745;
-  dct:source "#ReferencePublicationEvent : 008/15-17, 044$cOther events : 260$a, 264$a, 533$b" .
+  sh:or _:ae587f1f220542eb847087bc3e2b863749;
+  dct:source "#ReferencePublicationEvent : 008/15-17, 044$cOther events : 260$a, 264$a, 533$b";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c745 rdf:first _:73b5c5b2b41e44ccb84226da5ecac5c746;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c747 .
+_:ae587f1f220542eb847087bc3e2b863749 rdf:first _:ae587f1f220542eb847087bc3e2b863750;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863751 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c746 sh:node issnshapes:MARCCountry .
+_:ae587f1f220542eb847087bc3e2b863750 sh:node issnshapes:MARCCountry .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c747 rdf:first _:73b5c5b2b41e44ccb84226da5ecac5c748;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c749 .
+_:ae587f1f220542eb847087bc3e2b863751 rdf:first _:ae587f1f220542eb847087bc3e2b863752;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863753 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c748 sh:node issnshapes:ISOCountry .
+_:ae587f1f220542eb847087bc3e2b863752 sh:node issnshapes:ISOCountry .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c749 rdf:first _:73b5c5b2b41e44ccb84226da5ecac5c750;
+_:ae587f1f220542eb847087bc3e2b863753 rdf:first _:ae587f1f220542eb847087bc3e2b863754;
   rdf:rest rdf:nil .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c750 sh:node issnshapes:ISSNPlaces .
+_:ae587f1f220542eb847087bc3e2b863754 sh:node issnshapes:ISSNPlaces .
 
-issnshapes:P105 sh:path schema:publishedBy;
+issnshapes:P106 a skos:Concept;
+  sh:path schema:publishedBy;
   sh:name "published by"@en;
   sh:description "This property refers to the publisher that published (or reproduced) the continuing resource during that period.This property is not present on the #ReferencePublicationEvent."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNOrganization;
-  dct:source "260$b, 264$b, 533$c" .
+  dct:source "260$b, 264$b, 533$c";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P106 sh:path dct:temporal;
+issnshapes:P107 a skos:Concept;
+  sh:path dct:temporal;
   sh:name "temporal"@en;
   sh:description "This property contains the start date and end date (if any) of the period covered by this publication event.As the content of the originalMARC field is generally not structured, use of schema:startDate and schema:endDate is not possible. The content is typed as a string.This property is not present on the #ReferencePublicationEvent."@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "260$c, 264$c, 533$d" .
+  dct:source "260$c, 264$c, 533$d";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P108 sh:path rdf:type;
+issnshapes:P109 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue schema:Place .
+  sh:hasValue schema:Place;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P109 sh:path rdfs:label;
+issnshapes:P110 a skos:Concept;
+  sh:path rdfs:label;
   sh:name "label"@en;
   sh:description "This property contains the name of the place (generally a city)."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "260#$a, 2602$a, 2603$a, 264#$a, 2642$a, 2643$a,533$b" .
+  dct:source "260#$a, 2602$a, 2603$a, 264#$a, 2642$a, 2643$a,533$b";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P110 sh:path schema:sameAs;
+issnshapes:P111 a skos:Concept;
+  sh:path schema:sameAs;
   sh:name "same as"@en;
   sh:description "This property refers to an equivalent entry for this place in the Geonames database (i.e. the Geonames URI)"@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:pattern "^https://sws.geonames.org/.*$";
-  dct:source "260#$a, 2602$a, 2603$a, 264#$a, 2642$a, 2643$a, 533$b (URI en 926$u)" .
+  dct:source "260#$a, 2602$a, 2603$a, 264#$a, 2642$a, 2643$a, 533$b (URI en 926$u)";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P111 sh:path schema:geo;
+issnshapes:P112 a skos:Concept;
+  sh:path schema:geo;
   sh:name "geo"@en;
   sh:description "This property refers to the position of this place (http://issn.org/resource/ISSN/{ISSN}#PublicationPlace-{placename}-GeoCoordinates)"@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNGeocoordinates;
-  dct:source "926, 953, 533$b" .
+  dct:source "926, 953, 533$b";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P113 sh:path rdf:type;
+issnshapes:P114 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue schema:GeoCoordinates .
+  sh:hasValue schema:GeoCoordinates;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P114 sh:path schema:latitude;
+issnshapes:P115 a skos:Concept;
+  sh:path schema:latitude;
   sh:name "latitude"@en;
   sh:description "This property contains the latitude of the geographic coordinates."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:decimal;
-  dct:source "926$l, 953, 533$b" .
+  dct:source "926$l, 953, 533$b";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P115 sh:path schema:longitude;
+issnshapes:P116 a skos:Concept;
+  sh:path schema:longitude;
   sh:name "longitude"@en;
   sh:description "This property contains the longitude of the geographic coordinates."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:decimal;
-  dct:source "926$o, 953, 533$b" .
+  dct:source "926$o, 953, 533$b";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P116 sh:path schema:addressCountry;
+issnshapes:P117 a skos:Concept;
+  sh:path schema:addressCountry;
   sh:name "addressCountry"@en;
   sh:description "This property contains the name of the country of the geographic coordinates."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "926$b, 953$b" .
+  dct:source "926$b, 953$b";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P118 sh:path rdf:type;
+issnshapes:P119 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue schema:CreativeWork .
+  sh:hasValue schema:CreativeWork;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P119 sh:path schema:publisher;
+issnshapes:P120 a skos:Concept;
+  sh:path schema:publisher;
   sh:name "publisher"@en;
   sh:description "This property refers to the publisher (i.e. Reproduction Agency) of reproduction."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNOrganization;
-  dct:source "533$c" .
+  dct:source "533$c";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P120 sh:path dct:spatial;
+issnshapes:P121 a skos:Concept;
+  sh:path dct:spatial;
   sh:name "spatial"@en;
   sh:description "This property refers to the publication place of the reproduction."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNPlaces;
-  dct:source "533$b" .
+  dct:source "533$b";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P121 sh:path schema:publication;
+issnshapes:P122 a skos:Concept;
+  sh:path schema:publication;
   sh:name "publication"@en;
   sh:description "This property refers to the publication event of the reproduction."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNPublicationEvent;
-  dct:source "533" .
+  dct:source "533";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P123 sh:path rdf:type;
+issnshapes:P124 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:description "Note : Abbreviated KeyTitles and KeyTitles will have 2 types"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "2"^^xsd:integer;
-  sh:in _:73b5c5b2b41e44ccb84226da5ecac5c751 .
+  sh:in _:ae587f1f220542eb847087bc3e2b863755;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c751 rdf:first bf:Identifier;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c752 .
+_:ae587f1f220542eb847087bc3e2b863755 rdf:first bf:Identifier;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863756 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c752 rdf:first bf:Issn;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c753 .
+_:ae587f1f220542eb847087bc3e2b863756 rdf:first bf:Issn;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863757 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c753 rdf:first bf:IssnL;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c754 .
+_:ae587f1f220542eb847087bc3e2b863757 rdf:first bf:IssnL;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863758 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c754 rdf:first bf:Coden;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c755 .
+_:ae587f1f220542eb847087bc3e2b863758 rdf:first bf:Coden;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863759 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c755 rdf:first bf:KeyTitle;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c756 .
+_:ae587f1f220542eb847087bc3e2b863759 rdf:first bf:KeyTitle;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863760 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c756 rdf:first bf:AbbreviatedTitle;
+_:ae587f1f220542eb847087bc3e2b863760 rdf:first bf:AbbreviatedTitle;
   rdf:rest rdf:nil .
 
-issnshapes:P124 sh:path rdf:value;
+issnshapes:P125 a skos:Concept;
+  sh:path rdf:value;
   sh:name "value"@en;
   sh:description "This property contains the actual string value of the identifier. Note that KeyTitles and AbbreviatedKeyTitles have both rdf:value and bf:mainTitle properties, being both identifiers and titles."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "022$a, 022$l, 022$m, 022$y, 022$z, 030$a, 210$a, 222$a" .
+  dct:source "022$a, 022$l, 022$m, 022$y, 022$z, 030$a, 210$a, 222$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P125 sh:path bf:status;
+issnshapes:P126 a skos:Concept;
+  sh:path bf:status;
   sh:name "status"@en;
   sh:description "This property refers to the status of the ISSN (valid, incorrect or cancelled). This property is used on the ISSN and the ISSN-L identifier."@en;
   sh:maxCount "1"^^xsd:integer;
   sh:node issnshapes:IDStatus;
-  sh:in _:73b5c5b2b41e44ccb84226da5ecac5c757;
+  sh:in _:ae587f1f220542eb847087bc3e2b863761;
   sh:group issnshapes:controlledVocs;
-  dct:source "022$a, 022$l, 022$m, 022$y, 022$z, 210$a, 222$a" .
+  dct:source "022$a, 022$l, 022$m, 022$y, 022$z, 210$a, 222$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c757 rdf:first idStatus:Valid;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c758 .
+_:ae587f1f220542eb847087bc3e2b863761 rdf:first idStatus:Valid;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863762 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c758 rdf:first idStatus:Incorrect;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c759 .
+_:ae587f1f220542eb847087bc3e2b863762 rdf:first idStatus:Incorrect;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863763 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c759 rdf:first idStatus:Cancelled;
+_:ae587f1f220542eb847087bc3e2b863763 rdf:first idStatus:Cancelled;
   rdf:rest rdf:nil .
 
-issnshapes:P126 sh:path issnprop:hasCancelledISSN;
+issnshapes:P127 a skos:Concept;
+  sh:path issnprop:hasCancelledISSN;
   sh:name "has cancelled ISSN"@en;
   sh:description "This property refers to an ISSN which has been cancelled in favour of the actual ISSN. This property is used only on the ISSN identifier."@en;
   sh:nodeKind sh:IRI;
   sh:class bf:Issn;
-  dct:source "022$z" .
+  dct:source "022$z";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P127 sh:path issnprop:cancelledInFavorOf;
+issnshapes:P128 a skos:Concept;
+  sh:path issnprop:cancelledInFavorOf;
   sh:name "cancelled in favor of"@en;
   sh:description "This property refers to an ISSN that replaces this cancelled ISSN. This property is used only on the ISSN identifier."@en;
   sh:nodeKind sh:IRI;
   sh:class bf:Issn;
-  dct:source "022$v" .
+  dct:source "022$v";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P129 sh:path rdf:type;
+issnshapes:P130 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:description "Note : Abbreviated KeyTitles and KeyTitles will have 2 types"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "2"^^xsd:integer;
-  sh:in _:73b5c5b2b41e44ccb84226da5ecac5c760 .
+  sh:in _:ae587f1f220542eb847087bc3e2b863764;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c760 rdf:first bf:Title;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c761 .
+_:ae587f1f220542eb847087bc3e2b863764 rdf:first bf:Title;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863765 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c761 rdf:first bf:KeyTitle;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c762 .
+_:ae587f1f220542eb847087bc3e2b863765 rdf:first bf:KeyTitle;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863766 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c762 rdf:first bf:VariantTitle;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c763 .
+_:ae587f1f220542eb847087bc3e2b863766 rdf:first bf:VariantTitle;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863767 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c763 rdf:first bf:ParallelTitle;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c764 .
+_:ae587f1f220542eb847087bc3e2b863767 rdf:first bf:ParallelTitle;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863768 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c764 rdf:first bf:AbbreviatedTitle;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c765 .
+_:ae587f1f220542eb847087bc3e2b863768 rdf:first bf:AbbreviatedTitle;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863769 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c765 rdf:first bf:Identifier;
+_:ae587f1f220542eb847087bc3e2b863769 rdf:first bf:Identifier;
   rdf:rest rdf:nil .
 
-issnshapes:P130 sh:path bf:mainTitle;
+issnshapes:P131 a skos:Concept;
+  sh:path bf:mainTitle;
   sh:name "main title"@en;
   sh:description "This property contains the actual title, with a language code containing the title script code. Note that KeyTitles and AbbreviatedKeyTitles have both rdf:value and bf:mainTitle properties, being both identifiers and titles."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype rdf:langString;
-  dct:source "245$a, 246#$a, 2461$a, 2462$a, 2463$a, 2464$a, 2465$a, 2466$a, 2467$a, 2468$a" .
+  dct:source "245$a, 246#$a, 2461$a, 2462$a, 2463$a, 2464$a, 2465$a, 2466$a, 2467$a, 2468$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P131 sh:path bf:variantType;
+issnshapes:P132 a skos:Concept;
+  sh:path bf:variantType;
   sh:name "variant type"@en;
   sh:description "This property stores the type of the title, in the case of a variant title. For a key title or a parallel title it is not present."@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "246#$a, 2461$a, 2462$a, 2463$a, 2464$a, 2465$a, 2466$a, 2467$a, 2468$a" .
+  dct:source "246#$a, 2461$a, 2462$a, 2463$a, 2464$a, 2465$a, 2466$a, 2467$a, 2468$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P132 sh:path bf:translationOf;
+issnshapes:P133 a skos:Concept;
+  sh:path bf:translationOf;
   sh:name "translation of"@en;
   sh:description "When the title is a transliteration, this property indicates the original title from which the transliteration was done. The original title will have a bf:mainTitle property with a language code containing the script of the original title"@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:BlankNode;
-  sh:node issnshapes:ISSNOriginalTitle .
+  sh:node issnshapes:ISSNOriginalTitle;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P134 sh:path rdf:type;
+issnshapes:P135 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue schema:Organization .
+  sh:hasValue schema:Organization;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P135 sh:path schema:name;
+issnshapes:P136 a skos:Concept;
+  sh:path schema:name;
   sh:name "name"@en;
   sh:description "This property contains the name of the Organization, in the original language when it is known, or in latin script when the latin script is not transliterated from an original language."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:or _:73b5c5b2b41e44ccb84226da5ecac5c766;
-  dct:source "2601$b, 2602$b, 2603$b, 533$c. For ISSN Centre label, this is not from the MARC21 file." .
+  sh:or _:ae587f1f220542eb847087bc3e2b863770;
+  dct:source "2601$b, 2602$b, 2603$b, 533$c. For ISSN Centre label, this is not from the MARC21 file.";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c766 rdf:first _:73b5c5b2b41e44ccb84226da5ecac5c767;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c768 .
+_:ae587f1f220542eb847087bc3e2b863770 rdf:first _:ae587f1f220542eb847087bc3e2b863771;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863772 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c767 sh:datatype xsd:string .
+_:ae587f1f220542eb847087bc3e2b863771 sh:datatype xsd:string .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c768 rdf:first _:73b5c5b2b41e44ccb84226da5ecac5c769;
+_:ae587f1f220542eb847087bc3e2b863772 rdf:first _:ae587f1f220542eb847087bc3e2b863773;
   rdf:rest rdf:nil .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c769 sh:datatype rdf:langString .
+_:ae587f1f220542eb847087bc3e2b863773 sh:datatype rdf:langString .
 
-issnshapes:P136 sh:path schema:alternateName;
+issnshapes:P137 a skos:Concept;
+  sh:path schema:alternateName;
   sh:name "alternate name"@en;
   sh:description "This property contains the name of the Organization in latin script when it has been transliterated from the original language"@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype rdf:langString .
+  sh:datatype rdf:langString;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P137 sh:path schema:sameAs;
+issnshapes:P138 a skos:Concept;
+  sh:path schema:sameAs;
   sh:name "sameAs"@en;
   sh:description "This property refers to an equivalent URI for the organization, in the case of publishers or reproduction agencies, or to a Wikidata URI in the case of Keeper's agencies."@en;
   sh:nodeKind sh:IRI;
-  dct:source "710, 711, 720, 533$c" .
+  dct:source "710, 711, 720, 533$c";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P138 sh:path schema:parentOrganization;
+issnshapes:P139 a skos:Concept;
+  sh:path schema:parentOrganization;
   sh:name "parent organization"@en;
   sh:description "This property refers to the parent organization of this organization, in the case of issuing bodies."@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISSNOrganization;
-  dct:source "710$b" .
+  dct:source "710$b";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P139 sh:path schema:logo;
+issnshapes:P140 a skos:Concept;
+  sh:path schema:logo;
   sh:name "logo"@en;
   sh:description "Logo of an ISSN Centre"@en;
   sh:nodeKind sh:IRI;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P140 sh:path dct:spatial;
+issnshapes:P141 a skos:Concept;
+  sh:path dct:spatial;
   sh:name "country"@en;
   sh:description "Country of an ISSN Centre"@en;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:ISOCountry;
   sh:group issnshapes:controlledVocs;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P141 sh:path schema:identifier;
+issnshapes:P142 a skos:Concept;
+  sh:path schema:identifier;
   sh:name "center code"@en;
   sh:description "Code of an ISSN Centre, or Keeper's code of an Archival insitution in Keeper's Registry"@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P142 sh:path schema:address;
+issnshapes:P143 a skos:Concept;
+  sh:path schema:address;
   sh:name "address"@en;
   sh:description "Postal address entity of the ISSN Centre"@en;
   sh:nodeKind sh:BlankNode;
   sh:node issnshapes:ISSNPostalAddress;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P143 sh:path schema:telephone;
+issnshapes:P144 a skos:Concept;
+  sh:path schema:telephone;
   sh:name "telephone"@en;
   sh:description "Telephone of an ISSN Centre"@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P144 sh:path schema:url;
+issnshapes:P145 a skos:Concept;
+  sh:path schema:url;
   sh:name "website / url"@en;
   sh:description "Website of an ISSN Centre"@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P145 sh:path schema:email;
+issnshapes:P146 a skos:Concept;
+  sh:path schema:email;
   sh:name "e-mail"@en;
   sh:description "Direct email of an ISSN Centre"@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P146 sh:path schema:faxNumber;
+issnshapes:P147 a skos:Concept;
+  sh:path schema:faxNumber;
   sh:name "fax"@en;
   sh:description "Fax number of an ISSN Centre"@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P147 sh:path schema:contactPoint;
+issnshapes:P148 a skos:Concept;
+  sh:path schema:contactPoint;
   sh:name "contact"@en;
   sh:description "A Person contact point of an ISSN Centre"@en;
   sh:nodeKind sh:BlankNode;
   sh:node issnshapes:ISSNContactPoint;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P149 sh:path rdf:type;
+issnshapes:P150 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue schema:ContactPoint .
+  sh:hasValue schema:ContactPoint;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P150 sh:path schema:email;
+issnshapes:P151 a skos:Concept;
+  sh:path schema:email;
   sh:name "e-mail"@en;
   sh:description "E-mail of the person"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P151 sh:path schema:contactType;
+issnshapes:P152 a skos:Concept;
+  sh:path schema:contactType;
   sh:name "main contact ?"@en;
   sh:description "Contains the string \"Main contact point\" for the first contact point in the list"@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P152 sh:path schema:name;
+issnshapes:P153 a skos:Concept;
+  sh:path schema:name;
   sh:name "name"@en;
   sh:description "Concatenation of the civility, first name, last name and job position"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P153 sh:path schema:telephone;
+issnshapes:P154 a skos:Concept;
+  sh:path schema:telephone;
   sh:name "telephone"@en;
   sh:description "Can be repeated for multiple phone numbers"@en;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P154 sh:path schema:faxNumber;
+issnshapes:P155 a skos:Concept;
+  sh:path schema:faxNumber;
   sh:name "faxNumber"@en;
   sh:description "Fax number"@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P156 sh:path rdf:type;
+issnshapes:P157 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue schema:PostalAddress .
+  sh:hasValue schema:PostalAddress;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P157 sh:path schema:streetAddress;
+issnshapes:P158 a skos:Concept;
+  sh:path schema:streetAddress;
   sh:name "address"@en;
   sh:description "Full street address of the ISSN Centre"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P158 sh:path schema:addressLocality;
+issnshapes:P159 a skos:Concept;
+  sh:path schema:addressLocality;
   sh:name "city"@en;
   sh:description "City of the ISSN Centre"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P159 sh:path schema:addressCountry;
+issnshapes:P160 a skos:Concept;
+  sh:path schema:addressCountry;
   sh:name "address country"@en;
   sh:description "ISO code of the country for the address (duplicated from the country of the Centre itself)"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "not applicable" .
+  dct:source "not applicable";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P161 sh:path rdf:type;
+issnshapes:P162 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:in _:73b5c5b2b41e44ccb84226da5ecac5c770 .
+  sh:in _:ae587f1f220542eb847087bc3e2b863774;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c770 rdf:first bf:ClassificationUdc;
-  rdf:rest _:73b5c5b2b41e44ccb84226da5ecac5c771 .
+_:ae587f1f220542eb847087bc3e2b863774 rdf:first bf:ClassificationUdc;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863775 .
 
-_:73b5c5b2b41e44ccb84226da5ecac5c771 rdf:first bf:ClassificationDdc;
+_:ae587f1f220542eb847087bc3e2b863775 rdf:first bf:ClassificationDdc;
   rdf:rest rdf:nil .
 
-issnshapes:P162 sh:path rdf:value;
+issnshapes:P163 a skos:Concept;
+  sh:path rdf:value;
   sh:name "value"@en;
   sh:description "This property contains the actual classification value."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "080$a, 082$a" .
+  dct:source "080$a, 082$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P164 sh:path rdf:type;
+issnshapes:P165 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue bf:Note .
+  sh:hasValue bf:Note;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P165 sh:path bf:noteType;
+issnshapes:P166 a skos:Concept;
+  sh:path bf:noteType;
   sh:name "note type"@en;
   sh:description "This property contains the type of the note, as a string literal."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "588$a" .
+  dct:source "588$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P166 sh:path rdf:value;
+issnshapes:P167 a skos:Concept;
+  sh:path rdf:value;
   sh:name "value"@en;
   sh:description "This property contains the actual note value, as a string literal."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
   sh:datatype xsd:string;
-  dct:source "588$a" .
+  dct:source "588$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P168 sh:path rdf:type;
+issnshapes:P169 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue schema:ArchiveComponent .
+  sh:hasValue schema:ArchiveComponent;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P169 sh:path schema:creativeWorkStatus;
+issnshapes:P170 a skos:Concept;
+  sh:path schema:creativeWorkStatus;
   sh:name "archive status"@en;
   sh:description "This property contains one the possible string : \"Archived\", \"In Progress\" or \"Triggered\", value example : \"Archived\""@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype xsd:string .
+  sh:datatype xsd:string;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P170 sh:path schema:description;
+issnshapes:P171 a skos:Concept;
+  sh:path schema:description;
   sh:name "archive extent (full)"@en;
   sh:description "Contains the full extent of the archive's content, value example : \"Archived : 13; 20 (2 to 4); 21 (1 to 4); 22 (1 to 4); 23 (1 to 4); 24 (1 to 4); 25 (1 to 4); 26 (1 to 4); 27 (1 to 4); 28 (1 to 4); 29 (1 to 4); 30 (1 to 4); 31 (1 to 4); 32 (1 to 4); 33 (1 to 4); 34 (1 to 4); 35 (1 to 4); 36 (1 to 4); 37 (1 to 4); 38 (1 to 4); 39 (1 to 4); 40 (1, 3, 4); 42; 43 (2); 44 (3)\""@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype xsd:string .
+  sh:datatype xsd:string;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P171 sh:path schema:abstract;
+issnshapes:P172 a skos:Concept;
+  sh:path schema:abstract;
   sh:name "archive extent (short)"@en;
   sh:description "Contains the shortened version of the archive's content. Either both full and short extent are present, either none is present, value example : \"Archived : 13, 20 to 40, 42 to 44\""@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype xsd:string .
+  sh:datatype xsd:string;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P172 sh:path schema:dateModified;
+issnshapes:P173 a skos:Concept;
+  sh:path schema:dateModified;
   sh:name "last update date"@en;
   sh:description "The date the archive was last updated, value example : \"2020-04-02\"^^xsd:date"@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype xsd:date .
+  sh:datatype xsd:date;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P173 sh:path schema:temporalCoverage;
+issnshapes:P174 a skos:Concept;
+  sh:path schema:temporalCoverage;
   sh:name "temporal coverage"@en;
   sh:description "Captures the start and end year of the archive, in the form \"start year/end year\", value example : 1988/2000"@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype xsd:string .
+  sh:datatype xsd:string;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P174 sh:path schema:mainEntity;
+issnshapes:P175 a skos:Concept;
+  sh:path schema:mainEntity;
   sh:name "archived serial description (as provided by archival institution)"@en;
   sh:description "Points to a blank node without any type information, holding the name, publisher and ISSN of the archived periodical (see below)"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:BlankNode;
-  sh:node issnshapes:ISSNProvidedResourceDescription .
+  sh:node issnshapes:ISSNProvidedResourceDescription;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P175 sh:path schema:url;
+issnshapes:P176 a skos:Concept;
+  sh:path schema:url;
   sh:name "url (when accessible online)"@en;
   sh:description "Contains the URL where the archive is accessible, when it is accessible online"@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype xsd:anyUri .
+  sh:datatype xsd:anyUri;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P176 sh:path schema:holdingArchive;
+issnshapes:P177 a skos:Concept;
+  sh:path schema:holdingArchive;
   sh:name "archival organisation"@en;
   sh:description "Refers to the responsible archival organisation"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
-  sh:node issnshapes:ISSNArchiveOrganization .
+  sh:node issnshapes:ISSNArchiveOrganization;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P177 sh:path schema:isPartOf;
+issnshapes:P178 a skos:Concept;
+  sh:path schema:isPartOf;
   sh:name "web archive"@en;
   sh:description "Refers to the complete archive entity that holds this particular archive"@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
-  sh:node issnshapes:ISSNCompleteArchive .
+  sh:node issnshapes:ISSNCompleteArchive;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P179 sh:path rdf:type;
+issnshapes:P180 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
-  sh:maxCount "1"^^xsd:integer .
+  sh:maxCount "1"^^xsd:integer;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P180 sh:path schema:name;
+issnshapes:P181 a skos:Concept;
+  sh:path schema:name;
   sh:name "name"@en;
   sh:description "Title of the archived serial, as provided by the archival institution, value example : \"Medical Dosimetry\""@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype xsd:string .
+  sh:datatype xsd:string;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P181 sh:path schema:publisher;
+issnshapes:P182 a skos:Concept;
+  sh:path schema:publisher;
   sh:name "publisher"@en;
   sh:description "Name of the publisher of the serial, as provided by the archival institution, value example : \"Elsevier\""@en;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype xsd:string .
+  sh:datatype xsd:string;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P182 sh:path schema:issn;
+issnshapes:P183 a skos:Concept;
+  sh:path schema:issn;
   sh:name "issn"@en;
   sh:description "ISSN of the archived serial, as provided by the archival institution. At least one ISSN is present. This can be present 2 times with the print and electronic ISSN, value example : \"0958-3947\""@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "2"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype xsd:string .
+  sh:datatype xsd:string;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P184 sh:path rdf:type;
+issnshapes:P185 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
-  sh:maxCount "1"^^xsd:integer .
+  sh:maxCount "1"^^xsd:integer;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P185 sh:path bf:mainTitle;
+issnshapes:P186 a skos:Concept;
+  sh:path bf:mainTitle;
   sh:name "main title"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype rdf:langString .
+  sh:datatype rdf:langString;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P190 sh:path rdf:type;
+issnshapes:P191 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue schema:ArchiveOrganization .
+  sh:hasValue schema:ArchiveOrganization;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P191 sh:path schema:name;
+issnshapes:P192 a skos:Concept;
+  sh:path schema:name;
   sh:name "name"@en;
   sh:description "Name of the archival institution, value example : \"CLOCKSS Archive\""@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype xsd:string .
+  sh:datatype xsd:string;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P192 sh:path schema:identifier;
+issnshapes:P193 a skos:Concept;
+  sh:path schema:identifier;
   sh:name "identifier"@en;
   sh:description "Code of the archival institution, value example : \"clockss\""@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype xsd:string .
+  sh:datatype xsd:string;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P194 sh:path rdf:type;
+issnshapes:P195 a skos:Concept;
+  sh:path rdf:type;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:hasValue schema:ArchiveComponent .
+  sh:hasValue schema:ArchiveComponent;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P195 sh:path schema:name;
+issnshapes:P196 a skos:Concept;
+  sh:path schema:name;
   sh:name "name"@en;
   sh:description "Name of the archive, value example : \"Wayback machine\""@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:datatype xsd:string .
+  sh:datatype xsd:string;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P196 sh:path schema:holdingArchive;
+issnshapes:P197 a skos:Concept;
+  sh:path schema:holdingArchive;
   sh:name "archival organisation"@en;
   sh:description "Refers to the responsible archival organisation"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
-  sh:node issnshapes:ISSNArchiveOrganization .
+  sh:node issnshapes:ISSNArchiveOrganization;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P203 sh:path skos:inScheme;
+issnshapes:P201 a skos:Concept;
+  sh:path rdf:type;
+  sh:name "type"@en;
+  sh:minCount "1"^^xsd:integer;
+  sh:maxCount "1"^^xsd:integer;
+  sh:hasValue schema:CreativeWork;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
+
+issnshapes:P202 a skos:Concept;
+  sh:path bf:identifiedBy;
+  sh:name "identified by"@en;
+  sh:description "This property refers to the ISSN-H that identifies this resource."@en;
+  sh:minCount "1"^^xsd:integer;
+  sh:maxCount "1"^^xsd:integer;
+  sh:nodeKind sh:IRI;
+  sh:node issnshapes:ISSNHID;
+  dct:source "023$a first indicator 1";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
+
+issnshapes:P203 a skos:Concept;
+  sh:path schema:hasPart;
+  sh:name "has part"@en;
+  sh:description "This property refers to the ISSN resources that are grouped in this ISSN-H."@en;
+  sh:minCount "2"^^xsd:integer;
+  sh:nodeKind sh:IRI;
+  sh:node issnshapes:ISSNResource;
+  dct:source "023$a first indicator 1";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
+
+issnshapes:P207 a skos:Concept;
+  sh:path schema:mainEntity;
+  sh:name "main entity"@en;
+  sh:description "This property refers to the ISSN-H resource that this record describes (http://issn.org/resource/ISSN-H/{ISSN-H})"@en;
+  sh:minCount "1"^^xsd:integer;
+  sh:maxCount "1"^^xsd:integer;
+  sh:nodeKind sh:IRI;
+  sh:class issnshapes:ISSN-L;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
+
+issnshapes:P208 a skos:Concept;
+  sh:path bf:status;
+  sh:name "status"@en;
+  sh:description "This property refers to the status of this record."@en;
+  sh:minCount "1"^^xsd:integer;
+  sh:maxCount "1"^^xsd:integer;
+  sh:nodeKind sh:IRI;
+  sh:node issnshapes:RecordStatusIssnH;
+  sh:in _:ae587f1f220542eb847087bc3e2b863776;
+  dct:source "699$8";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
+
+_:ae587f1f220542eb847087bc3e2b863776 rdf:first recordStatusIssnH:Free;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863777 .
+
+_:ae587f1f220542eb847087bc3e2b863777 rdf:first recordStatusIssnH:Assigned;
+  rdf:rest rdf:nil .
+
+issnshapes:P212 a skos:Concept;
+  sh:path rdf:type;
+  sh:name "type"@en;
+  sh:description "Note : Abbreviated KeyTitles and KeyTitles will have 2 types"@en;
+  sh:minCount "1"^^xsd:integer;
+  sh:maxCount "1"^^xsd:integer;
+  sh:hasValue bf:Identifier;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
+
+issnshapes:P213 a skos:Concept;
+  sh:path rdf:value;
+  sh:name "value"@en;
+  sh:description "This property contains the actual string value of the identifier. Note that KeyTitles and AbbreviatedKeyTitles have both rdf:value and bf:mainTitle properties, being both identifiers and titles."@en;
+  sh:minCount "1"^^xsd:integer;
+  sh:maxCount "1"^^xsd:integer;
+  sh:nodeKind sh:Literal;
+  sh:datatype xsd:string;
+  dct:source "022$a, 022$l, 022$m, 022$y, 022$z, 030$a, 210$a, 222$a";
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
+
+issnshapes:P217 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue <http://id.loc.gov/vocabulary/carriers>;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P204 sh:path skos:inScheme;
+issnshapes:P218 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue <http://id.loc.gov/vocabulary/contentTypes>;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P205 sh:path skos:inScheme;
+issnshapes:P219 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue <http://id.loc.gov/vocabulary/mediaTypes>;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P206 sh:path skos:inScheme;
+issnshapes:P220 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue m21terms:continuingreg;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P207 sh:path skos:inScheme;
+issnshapes:P221 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue m21terms:formofmaterial;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P208 sh:path skos:inScheme;
+issnshapes:P222 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue <http://id.loc.gov/vocabulary/countries>;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P209 sh:path skos:inScheme;
+issnshapes:P223 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue m21terms:formofmaterial;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P210 sh:path skos:inScheme;
+issnshapes:P224 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue m21terms:alltyp;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P211 sh:path skos:inScheme;
+issnshapes:P225 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue m21terms:continuingori;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P212 sh:path skos:inScheme;
+issnshapes:P226 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue m21terms:commonfor;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P213 sh:path skos:inScheme;
+issnshapes:P227 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue m21terms:continuingscr;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P214 sh:path skos:inScheme;
+issnshapes:P228 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue <http://udcdata.info/udc-schema>;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P215 sh:path skos:inScheme;
+issnshapes:P229 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue <http://id.loc.gov/vocabulary/languages>;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P216 sh:path skos:inScheme;
+issnshapes:P230 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue <http://issn.org/vocabularies/RecordStatus>;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P217 sh:path skos:inScheme;
+issnshapes:P231 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue <http://issn.org/vocabularies/IdStatus>;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P219 sh:path skos:inScheme;
+issnshapes:P233 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue <http://issn.org/vocabularies/Medium>;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-issnshapes:P220 sh:path skos:inScheme;
+issnshapes:P234 a skos:Concept;
+  sh:path skos:inScheme;
   sh:name "in scheme"@en;
   sh:hasValue <http://purl.org/cld/freq/>;
-  sh:deactivated "true"^^xsd:boolean .
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
+
+issnshapes:P235 a skos:Concept;
+  sh:path skos:inScheme;
+  sh:name "in scheme"@en;
+  sh:hasValue <http://issn.org/vocabularies/RecordStatusIssnH>;
+  sh:deactivated "true"^^xsd:boolean;
+  skos:inScheme <http://issn.org/vocabularies/shapes>;
+  skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
 issnshapes:controlledVocs a sh:PropertyGroup;
   rdfs:label "controlled vocs."@en .
