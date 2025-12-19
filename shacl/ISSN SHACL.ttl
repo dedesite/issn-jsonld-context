@@ -184,19 +184,19 @@ issnshapes:ISSNTitle a sh:NodeShape;
   rdfs:label "Titles"@en;
   sh:nodeKind sh:BlankNodeOrIRI;
   sh:order "24"^^xsd:integer;
-  sh:or _:ae587f1f220542eb847087bc3e2b86372;
+  sh:or _:ae587f1f220542eb847087bc3e2b863778;
   sh:property issnshapes:P130, issnshapes:P131, issnshapes:P132, issnshapes:P133 .
 
-_:ae587f1f220542eb847087bc3e2b86372 rdf:first _:ae587f1f220542eb847087bc3e2b86373;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b86374 .
+_:ae587f1f220542eb847087bc3e2b863778 rdf:first _:ae587f1f220542eb847087bc3e2b863779;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863780 .
 
-_:ae587f1f220542eb847087bc3e2b86373 sh:nodeKind sh:IRI;
+_:ae587f1f220542eb847087bc3e2b863779 sh:nodeKind sh:IRI;
   sh:pattern "^http://issn.org/resource/ISSN/[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][X0-9](#KeyTitle|#AbbreviatedKeyTitle)$" .
 
-_:ae587f1f220542eb847087bc3e2b86374 rdf:first _:ae587f1f220542eb847087bc3e2b86375;
+_:ae587f1f220542eb847087bc3e2b863780 rdf:first _:ae587f1f220542eb847087bc3e2b863781;
   rdf:rest rdf:nil .
 
-_:ae587f1f220542eb847087bc3e2b86375 sh:nodeKind sh:BlankNode .
+_:ae587f1f220542eb847087bc3e2b863781 sh:nodeKind sh:BlankNode .
 
 issnshapes:ISSNOrganization a sh:NodeShape;
   rdfs:label "Organizations"@en;
@@ -406,17 +406,17 @@ issnshapes:P9 a skos:Concept;
   sh:name "type"@en;
   sh:minCount "3"^^xsd:integer;
   sh:maxCount "3"^^xsd:integer;
-  sh:in _:ae587f1f220542eb847087bc3e2b86376;
+  sh:in _:ae587f1f220542eb847087bc3e2b863782;
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b86376 rdf:first schema:Periodical;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b86377 .
+_:ae587f1f220542eb847087bc3e2b863782 rdf:first schema:Periodical;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863783 .
 
-_:ae587f1f220542eb847087bc3e2b86377 rdf:first bf:Work;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b86378 .
+_:ae587f1f220542eb847087bc3e2b863783 rdf:first bf:Work;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863784 .
 
-_:ae587f1f220542eb847087bc3e2b86378 rdf:first bf:Instance;
+_:ae587f1f220542eb847087bc3e2b863784 rdf:first bf:Instance;
   rdf:rest rdf:nil .
 
 issnshapes:P10 a skos:Concept;
@@ -573,22 +573,22 @@ issnshapes:P24 a skos:Concept;
   sh:description "Special information about the physical characteristics of the resource. They are often related to information in other parts of the MARC record especially from field 300 (Physical Description) or one of the 5XX note field"@en;
   sh:minCount "1"^^xsd:integer;
   sh:node issnshapes:Medium;
-  sh:in _:ae587f1f220542eb847087bc3e2b86379;
+  sh:in _:ae587f1f220542eb847087bc3e2b863785;
   sh:group issnshapes:controlledVocs;
   dct:source "007";
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b86379 rdf:first media:Print;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863710 .
+_:ae587f1f220542eb847087bc3e2b863785 rdf:first media:Print;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863786 .
 
-_:ae587f1f220542eb847087bc3e2b863710 rdf:first media:Online;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863711 .
+_:ae587f1f220542eb847087bc3e2b863786 rdf:first media:Online;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863787 .
 
-_:ae587f1f220542eb847087bc3e2b863711 rdf:first media:DigitalCarrier;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863712 .
+_:ae587f1f220542eb847087bc3e2b863787 rdf:first media:DigitalCarrier;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863788 .
 
-_:ae587f1f220542eb847087bc3e2b863712 rdf:first media:Other;
+_:ae587f1f220542eb847087bc3e2b863788 rdf:first media:Other;
   rdf:rest rdf:nil .
 
 issnshapes:P25 a skos:Concept;
@@ -609,25 +609,25 @@ issnshapes:P26 a skos:Concept;
   sh:description "This property contains the publication frequency of the continuing resource, from the Dublin Core Collection Description Frequency Namespace, or as the literal values \"unknown\" or \"other\"."@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:or _:ae587f1f220542eb847087bc3e2b863713;
+  sh:or _:ae587f1f220542eb847087bc3e2b863789;
   dct:source "'008/18";
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863713 rdf:first _:ae587f1f220542eb847087bc3e2b863714;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863715 .
+_:ae587f1f220542eb847087bc3e2b863789 rdf:first _:ae587f1f220542eb847087bc3e2b863790;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863791 .
 
-_:ae587f1f220542eb847087bc3e2b863714 sh:node issnshapes:Freq .
+_:ae587f1f220542eb847087bc3e2b863790 sh:node issnshapes:Freq .
 
-_:ae587f1f220542eb847087bc3e2b863715 rdf:first _:ae587f1f220542eb847087bc3e2b863716;
+_:ae587f1f220542eb847087bc3e2b863791 rdf:first _:ae587f1f220542eb847087bc3e2b863792;
   rdf:rest rdf:nil .
 
-_:ae587f1f220542eb847087bc3e2b863716 sh:in _:ae587f1f220542eb847087bc3e2b863717 .
+_:ae587f1f220542eb847087bc3e2b863792 sh:in _:ae587f1f220542eb847087bc3e2b863793 .
 
-_:ae587f1f220542eb847087bc3e2b863717 rdf:first "unknown";
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863718 .
+_:ae587f1f220542eb847087bc3e2b863793 rdf:first "unknown";
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863794 .
 
-_:ae587f1f220542eb847087bc3e2b863718 rdf:first "other";
+_:ae587f1f220542eb847087bc3e2b863794 rdf:first "other";
   rdf:rest rdf:nil .
 
 issnshapes:P27 a skos:Concept;
@@ -636,21 +636,21 @@ issnshapes:P27 a skos:Concept;
   sh:description "This property links the resource to the reference country of its publisher, which is generally used to decide what National Centre is responsible for ISSN assignment"@en;
   sh:minCount "2"^^xsd:integer;
   sh:maxCount "2"^^xsd:integer;
-  sh:or _:ae587f1f220542eb847087bc3e2b863719;
+  sh:or _:ae587f1f220542eb847087bc3e2b863795;
   sh:group issnshapes:controlledVocs;
   dct:source "'008/15-17, 044$c";
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863719 rdf:first _:ae587f1f220542eb847087bc3e2b863720;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863721 .
+_:ae587f1f220542eb847087bc3e2b863795 rdf:first _:ae587f1f220542eb847087bc3e2b863796;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b863797 .
 
-_:ae587f1f220542eb847087bc3e2b863720 sh:node issnshapes:MARCCountry .
+_:ae587f1f220542eb847087bc3e2b863796 sh:node issnshapes:MARCCountry .
 
-_:ae587f1f220542eb847087bc3e2b863721 rdf:first _:ae587f1f220542eb847087bc3e2b863722;
+_:ae587f1f220542eb847087bc3e2b863797 rdf:first _:ae587f1f220542eb847087bc3e2b863798;
   rdf:rest rdf:nil .
 
-_:ae587f1f220542eb847087bc3e2b863722 sh:node issnshapes:ISOCountry .
+_:ae587f1f220542eb847087bc3e2b863798 sh:node issnshapes:ISOCountry .
 
 issnshapes:P28 a skos:Concept;
   sh:path dct:type;
@@ -789,39 +789,39 @@ issnshapes:P40 a skos:Concept;
   sh:path rdf:type;
   sh:name "additionnal type"@en;
   sh:description "An additionnal rdf:type statement may be expressed on the resource depending on its characteristics."@en;
-  sh:in _:ae587f1f220542eb847087bc3e2b863723;
+  sh:in _:ae587f1f220542eb847087bc3e2b863799;
   dct:source "'007, 008/21";
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863723 rdf:first schema:Dataset;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863724 .
+_:ae587f1f220542eb847087bc3e2b863799 rdf:first schema:Dataset;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637100 .
 
-_:ae587f1f220542eb847087bc3e2b863724 rdf:first schema:BookSeries;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863725 .
+_:ae587f1f220542eb847087bc3e2b8637100 rdf:first schema:BookSeries;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637101 .
 
-_:ae587f1f220542eb847087bc3e2b863725 rdf:first schema:WebSite;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863726 .
+_:ae587f1f220542eb847087bc3e2b8637101 rdf:first schema:WebSite;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637102 .
 
-_:ae587f1f220542eb847087bc3e2b863726 rdf:first schema:Atlas;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863727 .
+_:ae587f1f220542eb847087bc3e2b8637102 rdf:first schema:Atlas;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637103 .
 
-_:ae587f1f220542eb847087bc3e2b863727 rdf:first schema:Map;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863728 .
+_:ae587f1f220542eb847087bc3e2b8637103 rdf:first schema:Map;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637104 .
 
-_:ae587f1f220542eb847087bc3e2b863728 rdf:first schema:AudioObject;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863729 .
+_:ae587f1f220542eb847087bc3e2b8637104 rdf:first schema:AudioObject;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637105 .
 
-_:ae587f1f220542eb847087bc3e2b863729 rdf:first schema:VideoObject;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863730 .
+_:ae587f1f220542eb847087bc3e2b8637105 rdf:first schema:VideoObject;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637106 .
 
-_:ae587f1f220542eb847087bc3e2b863730 rdf:first schema:Newspaper;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863731 .
+_:ae587f1f220542eb847087bc3e2b8637106 rdf:first schema:Newspaper;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637107 .
 
-_:ae587f1f220542eb847087bc3e2b863731 rdf:first bf:Tactile;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863732 .
+_:ae587f1f220542eb847087bc3e2b8637107 rdf:first bf:Tactile;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637108 .
 
-_:ae587f1f220542eb847087bc3e2b863732 rdf:first dctype:Text;
+_:ae587f1f220542eb847087bc3e2b8637108 rdf:first dctype:Text;
   rdf:rest rdf:nil .
 
 issnshapes:P41 a skos:Concept;
@@ -884,20 +884,20 @@ issnshapes:P46 a skos:Concept;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "2"^^xsd:integer;
   sh:nodeKind sh:IRI;
-  sh:or _:ae587f1f220542eb847087bc3e2b863733;
+  sh:or _:ae587f1f220542eb847087bc3e2b8637109;
   dct:source "023$a first indicator 0 for ISSN-L or 1 for ISSN-H";
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863733 rdf:first _:ae587f1f220542eb847087bc3e2b863734;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863735 .
+_:ae587f1f220542eb847087bc3e2b8637109 rdf:first _:ae587f1f220542eb847087bc3e2b8637110;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637111 .
 
-_:ae587f1f220542eb847087bc3e2b863734 sh:node issnshapes:ISSN-L .
+_:ae587f1f220542eb847087bc3e2b8637110 sh:node issnshapes:ISSN-L .
 
-_:ae587f1f220542eb847087bc3e2b863735 rdf:first _:ae587f1f220542eb847087bc3e2b863736;
+_:ae587f1f220542eb847087bc3e2b8637111 rdf:first _:ae587f1f220542eb847087bc3e2b8637112;
   rdf:rest rdf:nil .
 
-_:ae587f1f220542eb847087bc3e2b863736 sh:node issnshapes:ISSN-H .
+_:ae587f1f220542eb847087bc3e2b8637112 sh:node issnshapes:ISSN-H .
 
 issnshapes:P47 a skos:Concept;
   sh:path schema:issn;
@@ -988,7 +988,7 @@ issnshapes:P54 a skos:Concept;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
 issnshapes:P55 a skos:Concept;
-  sh:path _:ae587f1f220542eb847087bc3e2b863737;
+  sh:path _:ae587f1f220542eb847087bc3e2b8637113;
   sh:name "main entity of"@en;
   sh:description "Inverse of schema:mainEntity"@en;
   sh:minCount "1"^^xsd:integer;
@@ -998,7 +998,7 @@ issnshapes:P55 a skos:Concept;
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863737 sh:inversePath schema:mainEntity .
+_:ae587f1f220542eb847087bc3e2b8637113 sh:inversePath schema:mainEntity .
 
 issnshapes:P57 a skos:Concept;
   sh:path bf:absorbed;
@@ -1326,20 +1326,20 @@ issnshapes:P90 a skos:Concept;
   sh:description "This property refers to the entities that the Activity generated : the ISSN Record (http://issn.org/resource/ISSN/{ISSN}#Record) and the identifiers ISSN, ISSN-L, Key title and Abbreviated key title (http://issn.org/resource/ISSN/{ISSN}#ISSN, http://issn.org/resource/ISSN/{ISSN}#ISSN-L, http://issn.org/resource/ISSN/{ISSN}#KeyTitle, http://issn.org/resource/ISSN/{ISSN}#AbbreviatedKeyTitle)"@en;
   sh:minCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
-  sh:or _:ae587f1f220542eb847087bc3e2b863738;
+  sh:or _:ae587f1f220542eb847087bc3e2b8637114;
   dct:source "'699$v";
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863738 rdf:first _:ae587f1f220542eb847087bc3e2b863739;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863740 .
+_:ae587f1f220542eb847087bc3e2b8637114 rdf:first _:ae587f1f220542eb847087bc3e2b8637115;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637116 .
 
-_:ae587f1f220542eb847087bc3e2b863739 sh:class schema:Periodical .
+_:ae587f1f220542eb847087bc3e2b8637115 sh:class schema:Periodical .
 
-_:ae587f1f220542eb847087bc3e2b863740 rdf:first _:ae587f1f220542eb847087bc3e2b863741;
+_:ae587f1f220542eb847087bc3e2b8637116 rdf:first _:ae587f1f220542eb847087bc3e2b8637117;
   rdf:rest rdf:nil .
 
-_:ae587f1f220542eb847087bc3e2b863741 sh:node issnshapes:ISSNID .
+_:ae587f1f220542eb847087bc3e2b8637117 sh:node issnshapes:ISSNID .
 
 issnshapes:P91 a skos:Concept;
   sh:path prov:wasAssociatedWith;
@@ -1437,32 +1437,32 @@ issnshapes:P101 a skos:Concept;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:Status;
-  sh:in _:ae587f1f220542eb847087bc3e2b863742;
+  sh:in _:ae587f1f220542eb847087bc3e2b8637118;
   sh:group issnshapes:controlledVocs;
   dct:source "'699$8";
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863742 rdf:first recordStatus:Register;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863743 .
+_:ae587f1f220542eb847087bc3e2b8637118 rdf:first recordStatus:Register;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637119 .
 
-_:ae587f1f220542eb847087bc3e2b863743 rdf:first recordStatus:Unreported;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863744 .
+_:ae587f1f220542eb847087bc3e2b8637119 rdf:first recordStatus:Unreported;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637120 .
 
-_:ae587f1f220542eb847087bc3e2b863744 rdf:first recordStatus:Provisional;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863745 .
+_:ae587f1f220542eb847087bc3e2b8637120 rdf:first recordStatus:Provisional;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637121 .
 
-_:ae587f1f220542eb847087bc3e2b863745 rdf:first recordStatus:Legacy;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863746 .
+_:ae587f1f220542eb847087bc3e2b8637121 rdf:first recordStatus:Legacy;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637122 .
 
-_:ae587f1f220542eb847087bc3e2b863746 rdf:first recordStatus:Cancelled;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863747 .
+_:ae587f1f220542eb847087bc3e2b8637122 rdf:first recordStatus:Cancelled;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637123 .
 
-_:ae587f1f220542eb847087bc3e2b863747 rdf:first recordStatus:Suppressed;
+_:ae587f1f220542eb847087bc3e2b8637123 rdf:first recordStatus:Suppressed;
   rdf:rest rdf:nil .
 
 issnshapes:P102 a skos:Concept;
-  sh:path _:ae587f1f220542eb847087bc3e2b863748;
+  sh:path _:ae587f1f220542eb847087bc3e2b8637124;
   sh:name "generatedBy"@en;
   sh:description "Inverse of prov:generated"@en;
   sh:minCount "1"^^xsd:integer;
@@ -1472,7 +1472,7 @@ issnshapes:P102 a skos:Concept;
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863748 sh:inversePath prov:generated .
+_:ae587f1f220542eb847087bc3e2b8637124 sh:inversePath prov:generated .
 
 issnshapes:P104 a skos:Concept;
   sh:path rdf:type;
@@ -1490,25 +1490,25 @@ issnshapes:P105 a skos:Concept;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
-  sh:or _:ae587f1f220542eb847087bc3e2b863749;
+  sh:or _:ae587f1f220542eb847087bc3e2b8637125;
   dct:source "#ReferencePublicationEvent : 008/15-17, 044$cOther events : 260$a, 264$a, 533$b";
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863749 rdf:first _:ae587f1f220542eb847087bc3e2b863750;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863751 .
+_:ae587f1f220542eb847087bc3e2b8637125 rdf:first _:ae587f1f220542eb847087bc3e2b8637126;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637127 .
 
-_:ae587f1f220542eb847087bc3e2b863750 sh:node issnshapes:MARCCountry .
+_:ae587f1f220542eb847087bc3e2b8637126 sh:node issnshapes:MARCCountry .
 
-_:ae587f1f220542eb847087bc3e2b863751 rdf:first _:ae587f1f220542eb847087bc3e2b863752;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863753 .
+_:ae587f1f220542eb847087bc3e2b8637127 rdf:first _:ae587f1f220542eb847087bc3e2b8637128;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637129 .
 
-_:ae587f1f220542eb847087bc3e2b863752 sh:node issnshapes:ISOCountry .
+_:ae587f1f220542eb847087bc3e2b8637128 sh:node issnshapes:ISOCountry .
 
-_:ae587f1f220542eb847087bc3e2b863753 rdf:first _:ae587f1f220542eb847087bc3e2b863754;
+_:ae587f1f220542eb847087bc3e2b8637129 rdf:first _:ae587f1f220542eb847087bc3e2b8637130;
   rdf:rest rdf:nil .
 
-_:ae587f1f220542eb847087bc3e2b863754 sh:node issnshapes:ISSNPlaces .
+_:ae587f1f220542eb847087bc3e2b8637130 sh:node issnshapes:ISSNPlaces .
 
 issnshapes:P106 a skos:Concept;
   sh:path schema:publishedBy;
@@ -1672,26 +1672,26 @@ issnshapes:P124 a skos:Concept;
   sh:description "Note : Abbreviated KeyTitles and KeyTitles will have 2 types"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "2"^^xsd:integer;
-  sh:in _:ae587f1f220542eb847087bc3e2b863755;
+  sh:in _:ae587f1f220542eb847087bc3e2b8637131;
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863755 rdf:first bf:Identifier;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863756 .
+_:ae587f1f220542eb847087bc3e2b8637131 rdf:first bf:Identifier;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637132 .
 
-_:ae587f1f220542eb847087bc3e2b863756 rdf:first bf:Issn;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863757 .
+_:ae587f1f220542eb847087bc3e2b8637132 rdf:first bf:Issn;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637133 .
 
-_:ae587f1f220542eb847087bc3e2b863757 rdf:first bf:IssnL;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863758 .
+_:ae587f1f220542eb847087bc3e2b8637133 rdf:first bf:IssnL;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637134 .
 
-_:ae587f1f220542eb847087bc3e2b863758 rdf:first bf:Coden;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863759 .
+_:ae587f1f220542eb847087bc3e2b8637134 rdf:first bf:Coden;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637135 .
 
-_:ae587f1f220542eb847087bc3e2b863759 rdf:first bf:KeyTitle;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863760 .
+_:ae587f1f220542eb847087bc3e2b8637135 rdf:first bf:KeyTitle;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637136 .
 
-_:ae587f1f220542eb847087bc3e2b863760 rdf:first bf:AbbreviatedTitle;
+_:ae587f1f220542eb847087bc3e2b8637136 rdf:first bf:AbbreviatedTitle;
   rdf:rest rdf:nil .
 
 issnshapes:P125 a skos:Concept;
@@ -1712,19 +1712,19 @@ issnshapes:P126 a skos:Concept;
   sh:description "This property refers to the status of the ISSN (valid, incorrect or cancelled). This property is used on the ISSN and the ISSN-L identifier."@en;
   sh:maxCount "1"^^xsd:integer;
   sh:node issnshapes:IDStatus;
-  sh:in _:ae587f1f220542eb847087bc3e2b863761;
+  sh:in _:ae587f1f220542eb847087bc3e2b8637137;
   sh:group issnshapes:controlledVocs;
   dct:source "022$a, 022$l, 022$m, 022$y, 022$z, 210$a, 222$a";
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863761 rdf:first idStatus:Valid;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863762 .
+_:ae587f1f220542eb847087bc3e2b8637137 rdf:first idStatus:Valid;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637138 .
 
-_:ae587f1f220542eb847087bc3e2b863762 rdf:first idStatus:Incorrect;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863763 .
+_:ae587f1f220542eb847087bc3e2b8637138 rdf:first idStatus:Incorrect;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637139 .
 
-_:ae587f1f220542eb847087bc3e2b863763 rdf:first idStatus:Cancelled;
+_:ae587f1f220542eb847087bc3e2b8637139 rdf:first idStatus:Cancelled;
   rdf:rest rdf:nil .
 
 issnshapes:P127 a skos:Concept;
@@ -1753,26 +1753,26 @@ issnshapes:P130 a skos:Concept;
   sh:description "Note : Abbreviated KeyTitles and KeyTitles will have 2 types"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "2"^^xsd:integer;
-  sh:in _:ae587f1f220542eb847087bc3e2b863764;
+  sh:in _:ae587f1f220542eb847087bc3e2b8637140;
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863764 rdf:first bf:Title;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863765 .
+_:ae587f1f220542eb847087bc3e2b8637140 rdf:first bf:Title;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637141 .
 
-_:ae587f1f220542eb847087bc3e2b863765 rdf:first bf:KeyTitle;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863766 .
+_:ae587f1f220542eb847087bc3e2b8637141 rdf:first bf:KeyTitle;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637142 .
 
-_:ae587f1f220542eb847087bc3e2b863766 rdf:first bf:VariantTitle;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863767 .
+_:ae587f1f220542eb847087bc3e2b8637142 rdf:first bf:VariantTitle;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637143 .
 
-_:ae587f1f220542eb847087bc3e2b863767 rdf:first bf:ParallelTitle;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863768 .
+_:ae587f1f220542eb847087bc3e2b8637143 rdf:first bf:ParallelTitle;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637144 .
 
-_:ae587f1f220542eb847087bc3e2b863768 rdf:first bf:AbbreviatedTitle;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863769 .
+_:ae587f1f220542eb847087bc3e2b8637144 rdf:first bf:AbbreviatedTitle;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637145 .
 
-_:ae587f1f220542eb847087bc3e2b863769 rdf:first bf:Identifier;
+_:ae587f1f220542eb847087bc3e2b8637145 rdf:first bf:Identifier;
   rdf:rest rdf:nil .
 
 issnshapes:P131 a skos:Concept;
@@ -1824,20 +1824,20 @@ issnshapes:P136 a skos:Concept;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:Literal;
-  sh:or _:ae587f1f220542eb847087bc3e2b863770;
+  sh:or _:ae587f1f220542eb847087bc3e2b8637146;
   dct:source "2601$b, 2602$b, 2603$b, 533$c. For ISSN Centre label, this is not from the MARC21 file.";
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863770 rdf:first _:ae587f1f220542eb847087bc3e2b863771;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863772 .
+_:ae587f1f220542eb847087bc3e2b8637146 rdf:first _:ae587f1f220542eb847087bc3e2b8637147;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637148 .
 
-_:ae587f1f220542eb847087bc3e2b863771 sh:datatype xsd:string .
+_:ae587f1f220542eb847087bc3e2b8637147 sh:datatype xsd:string .
 
-_:ae587f1f220542eb847087bc3e2b863772 rdf:first _:ae587f1f220542eb847087bc3e2b863773;
+_:ae587f1f220542eb847087bc3e2b8637148 rdf:first _:ae587f1f220542eb847087bc3e2b8637149;
   rdf:rest rdf:nil .
 
-_:ae587f1f220542eb847087bc3e2b863773 sh:datatype rdf:langString .
+_:ae587f1f220542eb847087bc3e2b8637149 sh:datatype rdf:langString .
 
 issnshapes:P137 a skos:Concept;
   sh:path schema:alternateName;
@@ -2074,14 +2074,14 @@ issnshapes:P162 a skos:Concept;
   sh:name "type"@en;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer;
-  sh:in _:ae587f1f220542eb847087bc3e2b863774;
+  sh:in _:ae587f1f220542eb847087bc3e2b8637150;
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863774 rdf:first bf:ClassificationUdc;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863775 .
+_:ae587f1f220542eb847087bc3e2b8637150 rdf:first bf:ClassificationUdc;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637151 .
 
-_:ae587f1f220542eb847087bc3e2b863775 rdf:first bf:ClassificationDdc;
+_:ae587f1f220542eb847087bc3e2b8637151 rdf:first bf:ClassificationDdc;
   rdf:rest rdf:nil .
 
 issnshapes:P163 a skos:Concept;
@@ -2402,15 +2402,15 @@ issnshapes:P208 a skos:Concept;
   sh:maxCount "1"^^xsd:integer;
   sh:nodeKind sh:IRI;
   sh:node issnshapes:RecordStatusIssnH;
-  sh:in _:ae587f1f220542eb847087bc3e2b863776;
+  sh:in _:ae587f1f220542eb847087bc3e2b8637152;
   dct:source "699$8";
   skos:inScheme <http://issn.org/vocabularies/shapes>;
   skos:topConceptOf <http://issn.org/vocabularies/shapes> .
 
-_:ae587f1f220542eb847087bc3e2b863776 rdf:first recordStatusIssnH:Free;
-  rdf:rest _:ae587f1f220542eb847087bc3e2b863777 .
+_:ae587f1f220542eb847087bc3e2b8637152 rdf:first recordStatusIssnH:Free;
+  rdf:rest _:ae587f1f220542eb847087bc3e2b8637153 .
 
-_:ae587f1f220542eb847087bc3e2b863777 rdf:first recordStatusIssnH:Assigned;
+_:ae587f1f220542eb847087bc3e2b8637153 rdf:first recordStatusIssnH:Assigned;
   rdf:rest rdf:nil .
 
 issnshapes:P212 a skos:Concept;
